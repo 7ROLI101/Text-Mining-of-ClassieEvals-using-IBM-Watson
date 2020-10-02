@@ -6,10 +6,10 @@ import requests
 
 with requests.Session() as session:
     j = session.get("https://classie-evals.stonybrook.edu/")
-    # username = input("Enter in your username: ")
-    # password = input("Enter in your password: ")
-    payload = {'j_username': 'aavarghese',
-               'j_password': 'sceptile1',
+    username = input("Enter in your username: ")
+    password = input("Enter in your password: ")
+    payload = {'j_username': password,
+               'j_password': username,
                '_eventId_proceed': ''}
     k = session.post("https://sso.cc.stonybrook.edu/idp/profile/cas/login?execution=e1s1", data=payload)
     l = session.get("https://classie-evals.stonybrook.edu/")
