@@ -2,14 +2,16 @@
 from bs4 import BeautifulSoup
 # needed for reg expressions for the find functions in BeautifulSoup4
 import re
+# needed in order to make requests to ClassieEvals
 import requests
 
 with requests.Session() as session:
+    # THIS IS THE PART WHERE WE USE REQUESTS IN ORDER TO ACCESS CLASSIEEVALS
     j = session.get("https://classie-evals.stonybrook.edu/")
     username = input("Enter in your username: ")
     password = input("Enter in your password: ")
-    payload = {'j_username': password,
-               'j_password': username,
+    payload = {'j_username': username,
+               'j_password': password,
                '_eventId_proceed': ''}
     k = session.post("https://sso.cc.stonybrook.edu/idp/profile/cas/login?execution=e1s1", data=payload)
     l = session.get("https://classie-evals.stonybrook.edu/")
@@ -23,7 +25,7 @@ with requests.Session() as session:
         'Fall 2016': "1168", 'Summer 2016': "1166", 'Spring 2016': "1164", 'Winter 2016': "1161", 'Fall 2015': "1158",
         'Summer 2015': "1156", 'Spring 2015': "1154", 'Winter 2015': "1151", 'Summer 2014': "1146",
         'Spring 2014': "1144"}
-    time = times_to_code[season+' '+year]
+    time = times_to_code[season + ' ' + year]
     input_classie = {'SearchKeyword': 'ese+' + class_num,
                      'SearchTerm': time}
 
@@ -31,24 +33,32 @@ with requests.Session() as session:
                     + input_classie['SearchKeyword'] + "&SearchTerm=" + input_classie['SearchTerm'])
     classes_chosen = BeautifulSoup(n.text, 'html.parser').find('tbody').find_all('tr')
     classes_found = [{'code': chosen.contents[1].a.string,
-                      'name': chosen.contents[3].string.replace("\r", " ").replace("\n"," ").strip(),
+                      'name': chosen.contents[3].string.replace("\r", " ").replace("\n", " ").strip(),
                       'instructor': chosen.contents[5].a.string,
                       'website': chosen.contents[1].a['href']
-                     } for chosen in classes_chosen]
-    print(classes_found)
+                      } for chosen in classes_chosen]
+    # print(classes_found)
     print("Here is what was found:\n")
-    print("Class Code #,\t\t Class Name, \t\t , Class Instructor")
+    print("Class Code #\t\t Class Name \t\t  Class Instructor")
     for classes in classes_found:
-        print(classes['code']+"\t\t," + classes['name'] + "\t\t" + classes['instructor'])
+        print(classes['code'] + "\t\t" + classes['name'] + "\t\t" + classes['instructor'])
     class_code = input("Enter in a class code you want to use: ")
+    # This part provides error in input checking
+    # while class_code not in classes_found:
+    #     print("\nERROR: INVALID CLASS CODE PROVIDED")
+    #     for classes in classes_found:
+    #         print(classes['code'] + "\t\t" + classes['name'] + "\t\t" + classes['instructor'])
+    #     class_code = input("\nEnter in a class code you want to use: ")
+
     for classes in classes_found:
         if classes['code'] == class_code.strip().upper():
-            web_url = "https://classie-evals.stonybrook.edu/"+classes['website']
+            web_url = "https://classie-evals.stonybrook.edu/" + classes['website']
             l = session.get(web_url)
+            # END OF ACCESSING THE INTERNET WITH REQUESTS
 
-            # all of this code is for the part where we open up the file and see
-            # what are the possible positives(aka the section What was valuable about this course? on Classie Evals) and
-            # what are the possible negatives(aka the section What could be improved about this course? on Classie Evals)
+            # PARSING OF THE FILE all of this code is for the part where we open up the file and see what are the
+            # possible positives(aka the section What was valuable about this course? on ClassieEvals) and what are
+            # the possible negatives(aka the section What could be improved about this course? on Classie Evals)
             j = BeautifulSoup(l.content, 'html.parser')
             # this is for the class details
             class_description = j.find('section', 'bg-black basic-hero overlay-none cozy').text.split("\n")
@@ -103,6 +113,5 @@ with requests.Session() as session:
             print("\n")
             for negative in negatives:
                 print(negative)
-
-
-
+            break
+            # END OF PARSING OF THE FILE
