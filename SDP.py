@@ -4,14 +4,14 @@ from bs4 import BeautifulSoup
 import re
 # needed in order to make requests to ClassieEvals
 import requests
-from ibm_watson import ToneAnalyzerV3
+from ibm_watson import NaturalLanguageUnderstandingV1
 import json 
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 
-api_key = 'LWnJniDl7eg8gOUdI1leEXDKAOJiLcESBuLvu-_DF8eB'
-url = 'https://api.us-south.tone-analyzer.watson.cloud.ibm.com/instances/45bae0fd-e389-4e91-b961-bf6857431efd'
+api_key = 'rcXs4WvKrUtItOK0P1fv0mGGAC5ZfRth0ZNQWM17NIUT'
+url = 'https://api.us-south.natural-language-understanding.watson.cloud.ibm.com/instances/2acea4e4-9e41-400b-b6a1-a27c3c7c608c'
 authenticator = IAMAuthenticator(api_key)
-service = ToneAnalyzerV3(version = '2020-10-14',authenticator= authenticator)
+service = NaturalLanguageUnderstandingV1(version = '2020-10-14',authenticator= authenticator)
 service.set_service_url(url)
 
 
