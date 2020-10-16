@@ -4,16 +4,6 @@ from bs4 import BeautifulSoup
 import re
 # needed in order to make requests to ClassieEvals
 import requests
-from ibm_watson import ToneAnalyzerV3
-import json 
-from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
-
-api_key = 'LWnJniDl7eg8gOUdI1leEXDKAOJiLcESBuLvu-_DF8eB'
-url = 'https://api.us-south.tone-analyzer.watson.cloud.ibm.com/instances/45bae0fd-e389-4e91-b961-bf6857431efd'
-authenticator = IAMAuthenticator(api_key)
-service = ToneAnalyzerV3(version = '2020-10-14',authenticator= authenticator)
-service.set_service_url(url)
-
 
 with requests.Session() as session:
     # THIS IS THE PART WHERE WE USE REQUESTS IN ORDER TO ACCESS CLASSIEEVALS
@@ -117,12 +107,11 @@ with requests.Session() as session:
             print("Here are the comments for what people thought was valuable about the course:")
             print("\n")
             for positive in positives:
-                print("• " + positive + "\n")
+                print(positive)
             print("\n")
             print("Here are the comments for what people thought the course needed improvement:")
             print("\n")
             for negative in negatives:
-                print("• " + negative + "\n")
-            print("\n")
+                print(negative)
             break
             # END OF PARSING OF THE FILE
