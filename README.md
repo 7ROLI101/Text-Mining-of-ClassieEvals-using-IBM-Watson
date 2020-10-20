@@ -5,6 +5,5 @@ So far, all we have for the code is the parsing of the surveys using the Beautif
 
 **To Dos:
 *1. Add in code for post-coronavirus classes  
- 2. Learn how to use IBM Watson in order to do Text Analytics  *
-**
+ 2. Learn how to use IBM Watson in order to do Text Analytics* **
 
