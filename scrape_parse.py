@@ -14,11 +14,39 @@ with requests.Session() as session:
         password = input("Enter in your password: ")
         payload = {'j_username': username,
                    'j_password': password,
-                   '_eventId_proceed': ''}
-        user_info_post = session.post("https://sso.cc.stonybrook.edu/idp/profile/cas/login?execution=e1s1",
-                                      data=payload)
-        home_page = session.get("https://classie-evals.stonybrook.edu/")
-
+                   '_eventId_proceed': '',
+                   'donotcache': 1}
+        k = session.post("https://sso.cc.stonybrook.edu/idp/profile/cas/login?execution=e1s1", data=payload)
+        # this starts the part where we bypass DUO, which is the 2 factor authentification system
+        a = BeautifulSoup(k.content, 'html.parser')
+        b = a.find('iframe')
+        tx_attr = b.attrs['data-sig-request'].split(":", -1)[0]
+        app = b.attrs['data-sig-request'].split(":", -1)[1]
+        parent1 = 'https://sso.cc.stonybrook.edu/idp/profile/cas/login?execution=e1s2'
+        parameters = {'tx': tx_attr,
+                      'parent': parent1,
+                      'v': 2.6}
+        k = session.get('https://api-4c3c7a60.duosecurity.com/frame/web/v1/auth', params=parameters)
+        a = BeautifulSoup(k.content, 'html.parser')
+        b = a.find('form').find_all('input')
+        payload2 = {'tx': b[0].attrs['value'],
+                    'parent': b[1].attrs['value'],
+                    'referer': 'https://sso.cc.stonybrook.edu/',
+                    'java_version': b[2].attrs['value'],
+                    'flash_version': b[3].attrs['value'],
+                    'screen_resolution_width': b[4].attrs['value'],
+                    'screen_resolution_height': b[5].attrs['value'],
+                    'color_depth': b[6].attrs['value'],
+                    'is_cef_browser': b[6].attrs['value'],
+                    'is_ipad_os': b[7].attrs['value']}
+        k = session.post('https://api-4c3c7a60.duosecurity.com/frame/web/v1/auth', params=parameters, data=payload2)
+        a = BeautifulSoup(k.content, 'html.parser')
+        b = a.find('input').attrs['value']
+        payload1 = {'_eventId': 'proceed',
+                    'sig_response': str(b + ':' + app)}
+        k = session.post("https://sso.cc.stonybrook.edu/idp/profile/cas/login?execution=e1s2", data=payload1)
+        # this marks the end of bypassing the DUO authentification system
+        l = session.get("https://classie-evals.stonybrook.edu/")
 
     # this class will be used to signify a class from ClassieEvals
 
