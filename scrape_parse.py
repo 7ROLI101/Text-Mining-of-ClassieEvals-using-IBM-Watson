@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import re
 # needed in order to make requests to ClassieEvals
 import requests
+import getpass
 
 with requests.Session() as session:
     # this function will be used as a sign-on to ClassieEvals
@@ -48,8 +49,8 @@ with requests.Session() as session:
         # this marks the end of bypassing the DUO authentification system
         l = session.get("https://classie-evals.stonybrook.edu/")
 
-    # this class will be used to signify a class from ClassieEvals
 
+    # this class will be used to signify a class from ClassieEvals
 
     class inputClass:
         class_num = None
@@ -87,6 +88,18 @@ with requests.Session() as session:
         def get_class_year(self):
             return self.year
 
+        def get_class_code(self):
+            return self.class_properties['class_code']
+
+        def get_class_time(self):
+            return self.class_properties['time']
+
+        def get_class_type(self):
+            return self.class_properties['class_type']
+
+        def get_class_class_name(self):
+            return self.class_properties['class_name']
+
         def get_positive_comments(self):
             return self.class_properties['positives']
 
@@ -105,11 +118,17 @@ with requests.Session() as session:
             n = session.get("https://classie-evals.stonybrook.edu/" + "?SearchKeyword="
                             + input_classie['SearchKeyword'] + "&SearchTerm=" + input_classie['SearchTerm'])
             classes_chosen = BeautifulSoup(n.text, 'html.parser').find('tbody').find_all('tr')
-            classes_found = [{'code': chosen.contents[1].a.string,
-                              'name': chosen.contents[3].string.replace("\r", " ").replace("\n", " ").strip(),
-                              'instructor': chosen.contents[5].a.string,
-                              'website': chosen.contents[1].a['href']
-                              } for chosen in classes_chosen]
+            # creating the list of classes that appeared in the search
+            classes_found = []
+            for chosen in classes_chosen:
+                classes = {'code': chosen.contents[1].a.string,
+                           'name': chosen.contents[3].string.replace("\r", " ").replace("\n", " ").strip(),
+                           'website': chosen.contents[1].a['href']}
+                if chosen.contents[5].a is None:
+                    classes['instructor'] = "N/A"
+                else:
+                    classes['instructor'] = chosen.contents[5].a.string
+                classes_found.append(classes)
             print("Here is what was found:\n")
             print("Class Code #\t\t Class Name \t\t  Class Instructor")
             for classes in classes_found:
