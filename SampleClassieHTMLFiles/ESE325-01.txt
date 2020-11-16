@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface no-generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths tablesaw-enhanced" lang="en" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>ESE325-01 | Classie Evaluation Explorer</title>
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script async="" src="./ESE325-01 _ Classie Evaluation Explorer_files/analytics.js.download"></script><script src="./ESE325-01 _ Classie Evaluation Explorer_files/jquery.min.js.download"></script>
+    <link rel="stylesheet" href="./ESE325-01 _ Classie Evaluation Explorer_files/jquery-ui.css">
+    <script src="./ESE325-01 _ Classie Evaluation Explorer_files/jquery-ui.min.js.download"></script>
+
+    <link type="text/css" rel="stylesheet" href="./ESE325-01 _ Classie Evaluation Explorer_files/ee71ef3e-a7f1-47dd-8ae1-4ae6bec02b30.css">
+    <link rel="apple-touch-icon" href="https://classie-evals.stonybrook.edu/Section/details/ESE/325/01/images/favicons/apple-touch-icon-144x144-precomposed.png">
+    <link rel="shortcut icon" href="https://classie-evals.stonybrook.edu/Content/themes/unity-lab/images/favicons/favicon.ico">
+    <!--[if IE]>
+    <link rel="shortcut icon" href="/Content/themes/unity-lab/images/favicons/favicon.ico">
+    <![endif]-->
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+            <link rel="stylesheet" href="./ESE325-01 _ Classie Evaluation Explorer_files/style.css" type="text/css">
+            <script src="./ESE325-01 _ Classie Evaluation Explorer_files/header.dev.js.download"></script>
+
+
+    <link rel="stylesheet" href="./ESE325-01 _ Classie Evaluation Explorer_files/style(1).css" type="text/css">
+
+    
+
+
+
+    
+    
+
+
+
+    <script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-41506846-3', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+
+<script type="text/javascript" charset="UTF-8" src="./ESE325-01 _ Classie Evaluation Explorer_files/loader.js.download"></script><link id="load-css-0" rel="stylesheet" type="text/css" href="./ESE325-01 _ Classie Evaluation Explorer_files/tooltip.css"><link id="load-css-1" rel="stylesheet" type="text/css" href="./ESE325-01 _ Classie Evaluation Explorer_files/util.css"><script type="text/javascript" charset="UTF-8" src="./ESE325-01 _ Classie Evaluation Explorer_files/jsapi_compiled_default_module.js.download"></script><script type="text/javascript" charset="UTF-8" src="./ESE325-01 _ Classie Evaluation Explorer_files/jsapi_compiled_graphics_module.js.download"></script><script type="text/javascript" charset="UTF-8" src="./ESE325-01 _ Classie Evaluation Explorer_files/jsapi_compiled_ui_module.js.download"></script><script type="text/javascript" charset="UTF-8" src="./ESE325-01 _ Classie Evaluation Explorer_files/jsapi_compiled_corechart_module.js.download"></script></head>
+
+
+
+<body>
+
+    <div class="page" id="page">
+        <!-- Begin .header -->
+        <header>
+            <div class="logo-container">
+                <div class="container">
+
+                    <div class="logo-wrapper clearfix">
+                        <div class="logo">
+                            <a href="https://www.stonybrook.edu/"><img src="./ESE325-01 _ Classie Evaluation Explorer_files/stony-brook-university-logo.jpg" class="logo" alt="Stony Brook University Logo"></a>
+                        </div>
+                        <h1 class="site-name"><a href="https://classie-evals.stonybrook.edu/">Classie Evaluation Explorer</a></h1>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        
+        <nav class="unity-navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="unity-navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <div class="unity-navbar-toggle--button-hamburger">
+                            <span class="unity-nav-icon-bar"></span>
+                            <span class="unity-nav-icon-bar"></span>
+                            <span class="unity-nav-icon-bar"></span>
+                        </div>
+                        <div class="unity-navbar-toggle--button-text">
+                            Menu
+                        </div>
+                    </button>
+                </div>
+                <div id="navbar" class="unity-navbar-collapse collapse">
+                    <ul class="unity-navbar-nav">
+                        <li class="first"><a href="https://classie-evals.stonybrook.edu/">Sections</a></li>
+                        <li class=""><a href="https://classie-evals.stonybrook.edu/Instructor">Instructors</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+
+
+        
+
+<script type="text/javascript" src="./ESE325-01 _ Classie Evaluation Explorer_files/loader.js(1).download"></script>
+<script src="./ESE325-01 _ Classie Evaluation Explorer_files/jquery.easyPaginate.js.download"></script>
+<script type="text/javascript">
+
+    // Load the Visualization API and the corechart package.
+    google.charts.load('current', { 'packages': ['corechart'] });
+</script>
+
+
+
+
+
+
+<section class="bg-black basic-hero overlay-none cozy">
+    <div class="container">
+        <div class="hero-content">
+            <div class="row">
+                <div class="col-sx-12 col-sm-12 col-md-12">
+                    <h1 class="centered animated fadeInDown white">
+                        ESE325-01
+
+                        Fall 2018
+
+                        LEC
+                    </h1>
+
+                    <h2>MODERN SENSORS</h2>
+                    <h3>Leon Shterengas, Ridha Kamoua and Milutin Stanacevic</h3>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<section class="cozy">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <h3 class="bold-introduction-heading">Grade Distribution</h3>
+
+
+            </div>
+        </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <h4 class="section-heading">Students In This Class Received:</h4>
+                    <strong>Total:</strong>
+
+                    10
+                    <div class="width-80-percent" style="margin: 0px auto; height: 400px" id="gradeDistGraph"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 1170px; height: 400px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="1170" height="400" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_14"><clippath id="_ABSTRACT_RENDERER_ID_15"><rect x="50" y="77" width="1120" height="247"></rect></clippath></defs><g><rect x="50" y="77" width="1120" height="247" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://classie-evals.stonybrook.edu/Section/details/ESE/325/01/LEC/1188/96160#_ABSTRACT_RENDERER_ID_15)"><g><rect x="50" y="323" width="1120" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="50" y="282" width="1120" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="50" y="241" width="1120" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="50" y="200" width="1120" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="50" y="159" width="1120" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="50" y="118" width="1120" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="50" y="77" width="1120" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="50" y="303" width="1120" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="50" y="262" width="1120" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="50" y="221" width="1120" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="50" y="180" width="1120" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="50" y="139" width="1120" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="50" y="98" width="1120" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect></g><g><rect x="67" y="242" width="53" height="81" stroke="#990000" stroke-width="1" fill="#990000"></rect><rect x="153" y="160" width="53" height="163" stroke="#990000" stroke-width="1" fill="#990000"></rect><rect x="239" y="78" width="53" height="245" stroke="#990000" stroke-width="1" fill="#990000"></rect><rect x="325" y="160" width="53" height="163" stroke="#990000" stroke-width="1" fill="#990000"></rect><rect x="411" y="242" width="53" height="81" stroke="#990000" stroke-width="1" fill="#990000"></rect><rect x="497" y="242" width="54" height="81" stroke="#990000" stroke-width="1" fill="#990000"></rect><rect x="583" y="323" width="54" height="0.5" stroke="#990000" stroke-width="1" fill="#990000"></rect><rect x="669" y="323" width="54" height="0.5" stroke="#990000" stroke-width="1" fill="#990000"></rect><rect x="756" y="323" width="53" height="0.5" stroke="#990000" stroke-width="1" fill="#990000"></rect><rect x="842" y="323" width="53" height="0.5" stroke="#990000" stroke-width="1" fill="#990000"></rect><rect x="928" y="323" width="53" height="0.5" stroke="#990000" stroke-width="1" fill="#990000"></rect><rect x="1014" y="323" width="53" height="0.5" stroke="#990000" stroke-width="1" fill="#990000"></rect><rect x="1100" y="323" width="53" height="0.5" stroke="#990000" stroke-width="1" fill="#990000"></rect></g><g><rect x="50" y="323" width="1120" height="1" stroke="none" stroke-width="0" fill="#333333"></rect></g></g><g></g><g><g><text text-anchor="middle" x="93.53846153846155" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">A</text></g><g><text text-anchor="middle" x="179.6153846153846" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">A-</text></g><g><text text-anchor="middle" x="265.69230769230774" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">B+</text></g><g><text text-anchor="middle" x="351.7692307692308" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">B</text></g><g><text text-anchor="middle" x="437.84615384615387" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">B-</text></g><g><text text-anchor="middle" x="523.9230769230769" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">C+</text></g><g><text text-anchor="middle" x="610" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">C</text></g><g><text text-anchor="middle" x="696.0769230769231" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">C-</text></g><g><text text-anchor="middle" x="782.1538461538462" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">D+</text></g><g><text text-anchor="middle" x="868.2307692307693" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">D</text></g><g><text text-anchor="middle" x="954.3076923076924" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">F</text></g><g><text text-anchor="middle" x="1040.3846153846155" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">I</text></g><g><text text-anchor="middle" x="1126.4615384615386" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">W</text></g><g><text text-anchor="end" x="45.333333333333336" y="328.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">0.0</text></g><g><text text-anchor="end" x="45.333333333333336" y="287.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">0.5</text></g><g><text text-anchor="end" x="45.333333333333336" y="246.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">1.0</text></g><g><text text-anchor="end" x="45.333333333333336" y="205.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">1.5</text></g><g><text text-anchor="end" x="45.333333333333336" y="164.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">2.0</text></g><g><text text-anchor="end" x="45.333333333333336" y="123.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">2.5</text></g><g><text text-anchor="end" x="45.333333333333336" y="82.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">3.0</text></g></g></g><g><g><text text-anchor="middle" x="610" y="379.25" font-family="Arial" font-size="15" font-style="italic" stroke="none" stroke-width="0" fill="#222222">Grades</text><rect x="50" y="366.5" width="1120" height="15" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><g><text text-anchor="middle" x="17.416666666666668" y="200.5" font-family="Arial" font-size="15" font-style="italic" transform="rotate(-90 17.416666666666668 200.5)" stroke="none" stroke-width="0" fill="#222222">Number of Students</text><path d="M4.666666666666659,324L4.666666666666674,77L19.666666666666675,77L19.666666666666657,324Z" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></path></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th></th><th>Grade</th></tr></thead><tbody><tr><td>A</td><td>1</td></tr><tr><td>A-</td><td>2</td></tr><tr><td>B+</td><td>3</td></tr><tr><td>B</td><td>2</td></tr><tr><td>B-</td><td>1</td></tr><tr><td>C+</td><td>1</td></tr><tr><td>C</td><td>0</td></tr><tr><td>C-</td><td>0</td></tr><tr><td>D+</td><td>0</td></tr><tr><td>D</td><td>0</td></tr><tr><td>F</td><td>0</td></tr><tr><td>I</td><td>0</td></tr><tr><td>W</td><td>0</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 410px; left: 1180px; white-space: nowrap; font-family: Arial; font-size: 15px;">...</div><div></div></div></div>
+
+                </div>
+            </div>
+    </div>
+</section>
+
+
+
+<script type="text/javascript">
+
+                
+                    google.charts.setOnLoadCallback(drawChartGradeDistAF);
+                    $(window).on('resize', drawChartGradeDistAF);
+                
+
+
+
+
+
+    function drawChartGradeDistAFPNC() {
+
+
+
+        var data = google.visualization.arrayToDataTable([
+
+            ['', 'Grade', { role: 'style' }, { role: 'tooltip' }],
+
+
+            ['A', 1, '#990000', 1 + ' Students\n' + 10 + '%\n'],
+            ['A-', 2, '#990000', 2 + ' Students\n' + 20 + '%\n'],
+            ['B+', 3, '#990000', 3 + ' Students\n' + 30 + '%\n'],
+            ['B', 2, '#990000', 2 + ' Students\n' + 20 + '%\n'],
+            ['B-', 1, '#990000', 1 + ' Students\n' + 10 + '%\n'],
+            ['C+', 1, '#990000', 1 + ' Students\n' + 10 + '%\n'],
+            ['C', 0, '#990000', 0 + ' Students\n' + 0 + '%\n'],
+            ['C-', 0, '#990000', 0 + ' Students\n' + 0 + '%\n'],
+            ['D+', 0, '#990000', 0 + ' Students\n' + 0 + '%\n'],
+            ['D', 0, '#990000', 0 + ' Students\n' + 0 + '%\n'],
+            ['F', 0, '#990000', 0 + ' Students\n' + 0 + '%\n'],
+            ['P', 0, '#990000', 0 + ' Students\n' + 0 + '%\n'],
+            ['NC', 0, '#990000', 0 + ' Students\n' + 0 + '%\n'],
+            ['I', 0, '#990000', 0 + ' Students\n' + 0 + '%\n'],
+            ['W', 0, '#990000', 0 + ' Students\n' + 0 + '%\n']
+        ]);
+
+
+        var options = {
+            legend: { position: 'none' },
+            hAxis: { title: 'Grades' },
+            vAxis: { title: 'Number of Students' },
+            backgroundColor: { fill: 'transparent' },
+            width: '100%',
+            chartArea: { left: '50', width: '100%' }
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById("gradeDistGraph"));
+        chart.draw(data, options);
+
+    }
+
+    function drawChartGradeDistAF() {
+
+
+
+        var data = google.visualization.arrayToDataTable([
+
+
+
+            ['', 'Grade', { role: 'style' }, { role: 'tooltip' }],
+
+
+            ['A', 1, '#990000', 1 + ' Students\n' + 10 + '%\n'],
+            ['A-', 2, '#990000', 2 + ' Students\n' + 20 + '%\n'],
+            ['B+', 3, '#990000', 3 + ' Students\n' + 30 + '%\n'],
+            ['B', 2, '#990000', 2 + ' Students\n' + 20 + '%\n'],
+            ['B-', 1, '#990000', 1 + ' Students\n' + 10 + '%\n'],
+            ['C+', 1, '#990000', 1 + ' Students\n' + 10 + '%\n'],
+            ['C', 0, '#990000', 0 + ' Students\n' + 0 + '%\n'],
+            ['C-', 0, '#990000', 0 + ' Students\n' + 0 + '%\n'],
+            ['D+', 0, '#990000', 0 + ' Students\n' + 0 + '%\n'],
+            ['D', 0, '#990000', 0 + ' Students\n' + 0 + '%\n'],
+            ['F', 0, '#990000', 0 + ' Students\n' + 0 + '%\n'],
+            ['I', 0, '#990000', 0 + ' Students\n' + 0 + '%\n'],
+            ['W', 0, '#990000', 0 + ' Students\n' + 0 + '%\n']
+        ]);
+
+
+        var options = {
+            legend: { position: 'none' },
+            hAxis: { title: 'Grades' },
+            vAxis: { title: 'Number of Students' },
+            backgroundColor: { fill: 'transparent' },
+            width: '100%',
+            chartArea: { left: '50', width: '100%' }
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById("gradeDistGraph"));
+        chart.draw(data, options);
+
+    }
+
+    function drawChartGradeDistSU() {
+
+
+
+        var data = google.visualization.arrayToDataTable([
+
+            ['', 'Grade', { role: 'style' }, { role: 'tooltip' }],
+
+
+            ['S', 0, '#990000', 0 + ' Students\n' + 0 + '%\n'],
+            ['U', 0, '#990000', 0 + ' Students\n' + 0 + '%\n'],
+            ['P', 0, '#990000', 0 + ' Students\n' + 0 + '%\n'],
+            ['NC', 0, '#990000', 0 + ' Students\n' + 0 + '%\n'],
+            ['I', 0, '#990000', 0 + ' Students\n' + 0 + '%\n'],
+            ['W', 0, '#990000', 0 + ' Students\n' + 0 + '%\n']
+
+        ]);
+
+
+        var options = {
+            legend: { position: 'none' },
+            hAxis: { title: 'Grades' },
+            vAxis: { title: 'Number of Students' },
+            backgroundColor: { fill: 'transparent' },
+            width: '100%',
+            chartArea: { left: '50', width: '100%' }
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById("gradeDistGraph"));
+        chart.draw(data, options);
+
+    }
+
+
+
+</script>
+}
+
+
+<section class="cozy">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3 class="bold-introduction-heading">Evaluation Scores</h3>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4 class="section-heading">Overall, Students Give This Course a Grade of (A-F):</h4>
+                    <strong>Mean:</strong>
+
+                    B+
+                    <strong>Standard Deviation:</strong>
+                    0.49
+                    <strong>Responses</strong>
+                    5
+                    <br>
+                    <div class="width-80-percent" style="margin: 0px auto; height:400px" id="overallgraph"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 1170px; height: 400px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="1170" height="400" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_16"><clippath id="_ABSTRACT_RENDERER_ID_17"><rect x="50" y="77" width="1120" height="247"></rect></clippath></defs><g><rect x="50" y="77" width="1120" height="247" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://classie-evals.stonybrook.edu/Section/details/ESE/325/01/LEC/1188/96160#_ABSTRACT_RENDERER_ID_17)"><g><rect x="50" y="323" width="1120" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="50" y="282" width="1120" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="50" y="241" width="1120" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="50" y="200" width="1120" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="50" y="159" width="1120" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="50" y="118" width="1120" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="50" y="77" width="1120" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="50" y="303" width="1120" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="50" y="262" width="1120" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="50" y="221" width="1120" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="50" y="180" width="1120" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="50" y="139" width="1120" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="50" y="98" width="1120" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect></g><g><rect x="93" y="160" width="139" height="163" stroke="#990000" stroke-width="1" fill="#990000"></rect><rect x="317" y="78" width="138" height="245" stroke="#990000" stroke-width="1" fill="#990000"></rect><rect x="541" y="323" width="138" height="0.5" stroke="#990000" stroke-width="1" fill="#990000"></rect><rect x="765" y="323" width="138" height="0.5" stroke="#990000" stroke-width="1" fill="#990000"></rect><rect x="988" y="323" width="139" height="0.5" stroke="#990000" stroke-width="1" fill="#990000"></rect></g><g><rect x="50" y="323" width="1120" height="1" stroke="none" stroke-width="0" fill="#333333"></rect></g></g><g></g><g><g><text text-anchor="middle" x="162.4" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">A</text></g><g><text text-anchor="middle" x="386.20000000000005" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">B</text></g><g><text text-anchor="middle" x="610" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">C</text></g><g><text text-anchor="middle" x="833.8000000000001" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">D</text></g><g><text text-anchor="middle" x="1057.6" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">F</text></g><g><text text-anchor="end" x="45.333333333333336" y="328.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">0.0</text></g><g><text text-anchor="end" x="45.333333333333336" y="287.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">0.5</text></g><g><text text-anchor="end" x="45.333333333333336" y="246.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">1.0</text></g><g><text text-anchor="end" x="45.333333333333336" y="205.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">1.5</text></g><g><text text-anchor="end" x="45.333333333333336" y="164.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">2.0</text></g><g><text text-anchor="end" x="45.333333333333336" y="123.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">2.5</text></g><g><text text-anchor="end" x="45.333333333333336" y="82.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">3.0</text></g></g></g><g><g><text text-anchor="middle" x="610" y="379.25" font-family="Arial" font-size="15" font-style="italic" stroke="none" stroke-width="0" fill="#222222">Overall Grade</text><rect x="50" y="366.5" width="1120" height="15" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><g><text text-anchor="middle" x="17.416666666666668" y="200.5" font-family="Arial" font-size="15" font-style="italic" transform="rotate(-90 17.416666666666668 200.5)" stroke="none" stroke-width="0" fill="#222222">Responses</text><path d="M4.666666666666659,324L4.666666666666674,77L19.666666666666675,77L19.666666666666657,324Z" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></path></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th></th><th>Overall Grade</th></tr></thead><tbody><tr><td>A</td><td>2</td></tr><tr><td>B</td><td>3</td></tr><tr><td>C</td><td>0</td></tr><tr><td>D</td><td>0</td></tr><tr><td>F</td><td>0</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 410px; left: 1180px; white-space: nowrap; font-family: Arial; font-size: 15px;">...</div><div></div></div></div>
+                    <br>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-lg-6">
+                    <h4 class="section-heading">Hours Spent Weekly Studying Outside Class</h4>
+                    <strong>Mean:</strong>
+                    1.20
+                    <strong>Standard Deviation:</strong>
+                    0.40
+                    <strong>Responses</strong>
+                    5
+                    <br>
+                    <div class="google-graph card" id="StudyingGraph"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 554px; height: 200px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="554" height="200" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_18"><clippath id="_ABSTRACT_RENDERER_ID_19"><rect x="77" y="38" width="401" height="124"></rect></clippath></defs><g><rect x="77" y="38" width="401" height="124" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://classie-evals.stonybrook.edu/Section/details/ESE/325/01/LEC/1188/96160#_ABSTRACT_RENDERER_ID_19)"><g><rect x="77" y="161" width="401" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="77" y="100" width="401" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="77" y="38" width="401" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="77" y="130" width="401" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="77" y="69" width="401" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect></g><g><rect x="97" y="39" width="61" height="122" stroke="#990000" stroke-width="1" fill="#990000"></rect><rect x="197" y="131" width="61" height="30" stroke="#990000" stroke-width="1" fill="#990000"></rect><rect x="297" y="161" width="61" height="0.5" stroke="#990000" stroke-width="1" fill="#990000"></rect><rect x="397" y="161" width="61" height="0.5" stroke="#990000" stroke-width="1" fill="#990000"></rect></g><g><rect x="77" y="161" width="401" height="1" stroke="none" stroke-width="0" fill="#333333"></rect></g></g><g></g><g><g><text text-anchor="middle" x="127.5" y="176.68333333333334" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">0-3</text></g><g><text text-anchor="middle" x="227.5" y="176.68333333333334" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">4-6</text></g><g><text text-anchor="middle" x="327.5" y="176.68333333333334" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">7-9</text></g><g><text text-anchor="middle" x="427.5" y="176.68333333333334" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">10+</text></g><g><text text-anchor="end" x="66" y="165.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">0</text></g><g><text text-anchor="end" x="66" y="103.85" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">2</text></g><g><text text-anchor="end" x="66" y="42.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">4</text></g></g></g><g><g><text text-anchor="middle" x="277.5" y="193.01666666666668" font-family="Arial" font-size="11" font-style="italic" stroke="none" stroke-width="0" fill="#222222">Hours Studying Per Week</text><rect x="77" y="183.66666666666669" width="401" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><g><text text-anchor="middle" x="33.85" y="100" font-family="Arial" font-size="11" font-style="italic" transform="rotate(-90 33.85 100)" stroke="none" stroke-width="0" fill="#222222">Responses</text><path d="M24.499999999999996,162L24.500000000000004,38L35.50000000000001,38L35.5,162Z" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></path></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th></th><th>Studying Hours</th></tr></thead><tbody><tr><td>0-3</td><td>4</td></tr><tr><td>4-6</td><td>1</td></tr><tr><td>7-9</td><td>0</td></tr><tr><td>10+</td><td>0</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 210px; left: 564px; white-space: nowrap; font-family: Arial; font-size: 11px;">...</div><div></div></div></div>
+                </div>
+
+                <div class="col-sm-12 col-lg-6">
+
+                    <h4 class="section-heading">Average Student Attendance In This Class</h4>
+
+
+                    <strong>Mean:</strong>
+                    2.80
+                    <strong>StandardDeviation:</strong>
+                    1.47
+                    <strong>Responses</strong>
+                    5
+                    <br>
+                    <div class="margin-20-0" id="AttendanceGraph"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 554px; height: 200px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="554" height="200" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_20"><clippath id="_ABSTRACT_RENDERER_ID_21"><rect x="77" y="38" width="401" height="124"></rect></clippath></defs><g><rect x="77" y="38" width="401" height="124" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://classie-evals.stonybrook.edu/Section/details/ESE/325/01/LEC/1188/96160#_ABSTRACT_RENDERER_ID_21)"><g><rect x="77" y="161" width="401" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="77" y="120" width="401" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="77" y="79" width="401" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="77" y="38" width="401" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="77" y="141" width="401" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="77" y="100" width="401" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="77" y="59" width="401" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect></g><g><rect x="93" y="161" width="49" height="0.5" stroke="#990000" stroke-width="1" fill="#990000"></rect><rect x="173" y="39" width="49" height="122" stroke="#990000" stroke-width="1" fill="#990000"></rect><rect x="253" y="161" width="49" height="0.5" stroke="#990000" stroke-width="1" fill="#990000"></rect><rect x="333" y="80" width="49" height="81" stroke="#990000" stroke-width="1" fill="#990000"></rect><rect x="413" y="161" width="49" height="0.5" stroke="#990000" stroke-width="1" fill="#990000"></rect></g><g><rect x="77" y="161" width="401" height="1" stroke="none" stroke-width="0" fill="#333333"></rect></g></g><g></g><g><g><text text-anchor="middle" x="117.5" y="176.68333333333334" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">Always</text></g><g><text text-anchor="middle" x="197.5" y="176.68333333333334" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">Most</text></g><g><text text-anchor="middle" x="277.5" y="176.68333333333334" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">Half</text></g><g><text text-anchor="middle" x="357.5" y="176.68333333333334" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">Infrequently</text></g><g><text text-anchor="middle" x="437.5" y="176.68333333333334" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">Only Exams</text></g><g><text text-anchor="end" x="66" y="165.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">0</text></g><g><text text-anchor="end" x="66" y="124.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">1</text></g><g><text text-anchor="end" x="66" y="83.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">2</text></g><g><text text-anchor="end" x="66" y="42.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">3</text></g></g></g><g><g><text text-anchor="middle" x="277.5" y="193.01666666666668" font-family="Arial" font-size="11" font-style="italic" stroke="none" stroke-width="0" fill="#222222">Attendance</text><rect x="77" y="183.66666666666669" width="401" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect></g><g><text text-anchor="middle" x="33.85" y="100" font-family="Arial" font-size="11" font-style="italic" transform="rotate(-90 33.85 100)" stroke="none" stroke-width="0" fill="#222222">Responses</text><path d="M24.499999999999996,162L24.500000000000004,38L35.50000000000001,38L35.5,162Z" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></path></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th></th><th>Attendance</th></tr></thead><tbody><tr><td>Always</td><td>0</td></tr><tr><td>Most</td><td>3</td></tr><tr><td>Half</td><td>0</td></tr><tr><td>Infrequently</td><td>2</td></tr><tr><td>Only Exams</td><td>0</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 210px; left: 564px; white-space: nowrap; font-family: Arial; font-size: 11px;">...</div><div></div></div></div>
+                </div>
+            </div>
+            <script type="text/javascript">
+
+
+                    google.charts.setOnLoadCallback(drawChartOverall);
+                    $(window).on('resize', drawChartOverall);
+
+                    google.charts.setOnLoadCallback(drawChartHours);
+                    $(window).on('resize', drawChartHours);
+
+                    google.charts.setOnLoadCallback(drawChartAttendance);
+                    $(window).on('resize', drawChartAttendance);
+
+
+
+
+
+
+
+
+                function drawChartOverall() {
+                    var data = google.visualization.arrayToDataTable([
+                        ['', 'Overall Grade', { role: 'style' }, { role: 'tooltip' }],
+                        ['A', 2, '#990000', 2 + ' Responses\n' + 40 + '% of total responses'],
+                        ['B', 3, '#990000', 3 + ' Responses\n' + 60 + '% of total responses'],
+                        ['C', 0, '#990000', 0 + ' Responses\n' + 0 + '% of total responses'],
+                        ['D', 0, '#990000', 0 + ' Responses\n' + 0 + '% of total responses'],
+                        ['F', 0, '#990000', 0 + ' Responses\n' + 0 + '% of total responses']
+                    ]);
+
+                    var options = {
+                        legend: { position: 'none' },
+                        hAxis: { title: 'Overall Grade' },
+                        vAxis: { title: 'Responses' },
+                        backgroundColor: { fill: 'transparent' },
+                        width: '100%',
+                        chartArea: { left: '50', width: '100%' }
+                    };
+
+                    var chart = new google.visualization.ColumnChart(document.getElementById("overallgraph"));
+                    chart.draw(data, options);
+                }
+
+
+
+
+                    function drawChartHours() {
+
+                        var data = google.visualization.arrayToDataTable([
+                            ['', 'Studying Hours', { role: 'style' }, { role: 'tooltip' }],
+                            ['0-3', 4, '#990000', 4 + ' Responses\n' + 80 + '% of total responses'],
+                            ['4-6', 1, '#990000', 1 + ' Responses\n' + 20 + '% of total responses'],
+                            ['7-9', 0, '#990000', 0 + ' Responses\n' + 0 + '% of total responses'],
+                            ['10+', 0, '#990000', 0 + ' Responses\n' + 0 + '% of total responses']
+                        ]);
+
+                        var options = {
+                            legend: { position: 'none' },
+                            hAxis: { title: 'Hours Studying Per Week' },
+                            vAxis: { title: 'Responses' },
+
+                            backgroundColor: { fill: 'transparent' }
+                        };
+
+                        var chart = new google.visualization.ColumnChart(document.getElementById("StudyingGraph"));
+                        chart.draw(data, options);
+                    }
+
+
+
+
+
+                    function drawChartAttendance() {
+                        var data = google.visualization.arrayToDataTable([
+                            ['', 'Attendance', { role: 'style' }, { role: 'tooltip' }],
+                            ['Always', 0, '#990000', 0 + ' Responses\n' + 0 + '% of total responses'],
+                            ['Most', 3, '#990000', 3 + ' Responses\n' + 60 + '% of total responses'],
+                            ['Half', 0, '#990000', 0 + ' Responses\n' + 0 + '% of total responses'],
+                            ['Infrequently', 2, '#990000', 2 + ' Responses\n' + 40 + '% of total responses'],
+                            ['Only Exams', 0, '#990000', 0 + ' Responses\n' + 0 + '% of total responses']
+                        ]);
+
+                        var options = {
+                            legend: { position: 'none' },
+                            hAxis: { title: 'Attendance' },
+                            vAxis: { title: 'Responses' },
+                            backgroundColor: { fill: 'transparent' }
+                        };
+
+                        var chart = new google.visualization.ColumnChart(document.getElementById("AttendanceGraph"));
+                        chart.draw(data, options);
+                    }
+
+            </script>
+
+    </div>
+</section>
+
+<section class="cozy">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <h3 class="bold-introduction-heading">Student Comments</h3>
+
+
+
+
+                            <h4 class="section-heading">
+                                What was valuable about this course?
+                            </h4>
+                            <div class="snug">
+                                <div class="easyPaginateFilter row"><div class="col-sm-12 col-md-8 col-lg-6"><div class="form-group" style="width:100%"><div class="input-group" style="width:100%"><div class="input-group-addon">Filter Comments</div><input id="paginate-1-filter" class="easyPaginateFilter form-control" type="text"></div></div></div></div><ul id="paginate-1" class="no-bullets list-striped easyPaginateList">
+                                            <li>
+                                                The lecture is the core of the class where you can learn about the operation of a variety of sensors and their application. Concepts such as sensitivity are useful in order to know the operation of general sensors.
+                                            </li>
+                                            <li>
+                                                I got some hands-on experience doing the project. Not much reading, so you got time to do whatever project of your choosing.
+                                            </li>
+                                            <li>
+                                                Learning some real applications as well as theory of operation of sensors. Very good connection of theory and applicaion.
+                                            </li>
+                                            <li>
+                                                The exposure to the different sensors that exist today and the fundamental principles surrounding them.
+                                            </li>
+
+                                </ul>
+
+
+                                <script type="text/javascript">
+                                    $('#paginate-1').easyPaginate({
+                                        paginateElement: 'li',
+                                        elementsPerPage: 10,
+                                        lastButton: false,
+                                        firstButton: false,
+                                        slideOffset: 150
+
+                                    });
+                                </script>
+                            </div>
+                            <h4 class="section-heading">
+                                What could be improved about this course?
+                            </h4>
+                            <div class="snug">
+                                <div class="easyPaginateFilter row"><div class="col-sm-12 col-md-8 col-lg-6"><div class="form-group" style="width:100%"><div class="input-group" style="width:100%"><div class="input-group-addon">Filter Comments</div><input id="paginate-2-filter" class="easyPaginateFilter form-control" type="text"></div></div></div></div><ul id="paginate-2" class="no-bullets list-striped easyPaginateList">
+                                            <li>
+                                                Homeworks should definitely be posted well in advance. There's no reason to teach content from August - early November and decide to post the homework early November on everything covered. Homeworks should correspond to the content on a rolling basis. The class is inefficiently distributed. A lot of content is condensed from September to November and the rest of the semester is spent on class presentations, which no one unfortunately attends. It'd be great if the content was spread out for a longer time so we would all learn better.
+                                            </li>
+                                            <li>
+                                                Circuits aspect of course was very rushed, unorganized and disconnected from rest of course. Also, possibly better communication between professors is best on homeworks so there is some general agreement for how to submit, ask questions, etc. in order for students to have consistency in that regard.
+                                            </li>
+                                            <li>
+                                                Due to having a weak physics background I struggled in some of Professor Shterengas lectures. Having the homeworks given in the middle of semester instead of scattered throughout lead to going back to lectures in order to relearn some of the material as it wasn't fresh in my mind.
+                                            </li>
+                                            <li>
+                                                Try not to cover so much material. The exam is just plugging in formulas that no one understands. Professors dump a ton of information on students. It's overwhelming.
+                                            </li>
+
+                                </ul>
+
+
+                                <script type="text/javascript">
+                                    $('#paginate-2').easyPaginate({
+                                        paginateElement: 'li',
+                                        elementsPerPage: 10,
+                                        lastButton: false,
+                                        firstButton: false,
+                                        slideOffset: 150
+
+                                    });
+                                </script>
+                            </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+    <section class="cozy">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-sm-12"><h3 class="bold-introduction-heading">Instructors</h3></div>
+
+            </div>
+
+
+
+        <div class="row">
+            <div class="col-sm-12">
+
+
+
+                <h4>Leon Shterengas <small> <a style="margin-left: 20px; font-size: 80%; text-decoration: none;" class="arrow-link" href="https://classie-evals.stonybrook.edu/Instructor/lshteren">View Profile</a></small></h4>
+            </div>
+
+
+
+                    <div class="col-sm-12" id="lshteren" style="margin: 0px auto; height:400px"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 1170px; height: 400px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="1170" height="400" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_22"><clippath id="_ABSTRACT_RENDERER_ID_23"><rect x="40" y="77" width="856" height="247"></rect></clippath></defs><g><rect x="911" y="77" width="244" height="79" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><rect x="911" y="77" width="244" height="35" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="947" y="89.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">The instructor was effective in</text><text text-anchor="start" x="947" y="109.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">teaching the subject matter</text></g><rect x="911" y="77" width="30" height="15" stroke="none" stroke-width="0" fill="#990000"></rect></g><g><rect x="911" y="121" width="244" height="35" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="947" y="133.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">Instructor expectations of</text><text text-anchor="start" x="947" y="153.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">students were reasonable</text></g><rect x="911" y="121" width="30" height="15" stroke="none" stroke-width="0" fill="#004470"></rect></g></g><g><rect x="40" y="77" width="856" height="247" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://classie-evals.stonybrook.edu/Section/details/ESE/325/01/LEC/1188/96160#_ABSTRACT_RENDERER_ID_23)"><g><rect x="40" y="323" width="856" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="40" y="282" width="856" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="40" y="241" width="856" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="40" y="200" width="856" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="40" y="159" width="856" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="40" y="118" width="856" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="40" y="77" width="856" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="40" y="303" width="856" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="40" y="262" width="856" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="40" y="221" width="856" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="40" y="180" width="856" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="40" y="139" width="856" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="40" y="98" width="856" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect></g><g><rect x="73" y="78" width="53" height="245" stroke="none" stroke-width="0" fill="#990000"></rect><rect x="244" y="160" width="53" height="163" stroke="none" stroke-width="0" fill="#990000"></rect><rect x="415" y="323" width="53" height="0.5" stroke="none" stroke-width="0" fill="#990000"></rect><rect x="586" y="323" width="53" height="0.5" stroke="none" stroke-width="0" fill="#990000"></rect><rect x="757" y="323" width="53" height="0.5" stroke="none" stroke-width="0" fill="#990000"></rect><rect x="127" y="160" width="52" height="163" stroke="none" stroke-width="0" fill="#004470"></rect><rect x="298" y="78" width="52" height="245" stroke="none" stroke-width="0" fill="#004470"></rect><rect x="469" y="323" width="52" height="0.5" stroke="none" stroke-width="0" fill="#004470"></rect><rect x="640" y="323" width="52" height="0.5" stroke="none" stroke-width="0" fill="#004470"></rect><rect x="811" y="323" width="52" height="0.5" stroke="none" stroke-width="0" fill="#004470"></rect></g><g><rect x="40" y="323" width="856" height="1" stroke="none" stroke-width="0" fill="#333333"></rect></g></g><g></g><g><g><text text-anchor="middle" x="126" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">Strongly Agree</text></g><g><text text-anchor="middle" x="297" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">Agree</text></g><g><text text-anchor="middle" x="468" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">Neutral</text></g><g><text text-anchor="middle" x="639" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">Disagree</text></g><g><text text-anchor="middle" x="810" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">Strongly Disagree</text></g><g><text text-anchor="end" x="30.5" y="328.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">0.0</text></g><g><text text-anchor="end" x="30.5" y="287.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">0.5</text></g><g><text text-anchor="end" x="30.5" y="246.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">1.0</text></g><g><text text-anchor="end" x="30.5" y="205.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">1.5</text></g><g><text text-anchor="end" x="30.5" y="164.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">2.0</text></g><g><text text-anchor="end" x="30.5" y="123.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">2.5</text></g><g><text text-anchor="end" x="30.5" y="82.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">3.0</text></g></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th></th><th>The instructor was effective in teaching the subject matter</th><th>Instructor expectations of students were reasonable</th></tr></thead><tbody><tr><td>Strongly Agree</td><td>3</td><td>2</td></tr><tr><td>Agree</td><td>2</td><td>3</td></tr><tr><td>Neutral</td><td>0</td><td>0</td></tr><tr><td>Disagree</td><td>0</td><td>0</td></tr><tr><td>Strongly Disagree</td><td>0</td><td>0</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 410px; left: 1180px; white-space: nowrap; font-family: Arial; font-size: 15px;">students were reasonable</div><div></div></div></div>
+                    <script type="text/javascript">
+                                            google.charts.setOnLoadCallback(drawInstructorChart);
+
+
+
+                        function drawInstructorChart() {
+                            var data = google.visualization.arrayToDataTable([
+
+                                ['', 'The instructor was effective in teaching the subject matter', {role: 'tooltip'}, 'Instructor expectations of students were reasonable', {role: 'tooltip'}],
+                                                    ['Strongly Agree', 3, 3 + ' Responses\n' + 60 + '% of total responses: ' + "\nMean: " + 4.60 + "\nStandard Deviation: " + 0.49 + "\nTotal Responses: " + 5, 2, 2 + ' Responses\n' + 40 + '% of total responses' + "\nMean: " + 4.40 + "\nStandard Deviation: " + 0.49 + "\nTotal Responses: " + 5],
+                                                    ['Agree', 2, 2 + ' Responses\n' + 40 + '% of total responses' + "\nMean: " + 4.60 + "\nStandard Deviation: " + 0.49 + "\nTotal Responses: " + 5, 3, 3 + ' Responses\n' + 60 + '% of total responses' + "\nMean: " + 4.40 + "\nStandard Deviation: " + 0.49 + "\nTotal Responses: " + 5],
+                                                    ['Neutral', 0, 0 + ' Responses\n' + 0 + '% of total responses' + "\nMean: " + 4.60 + "\nStandard Deviation: " + 0.49 + "\nTotal Responses: " + 5, 0, 0 + ' Responses\n' + 0 + '% of total responses' + "\nMean: " + 4.40 + "\nStandard Deviation: " + 0.49 + "\nTotal Responses: " + 5],
+                                                    ['Disagree', 0, 0 + ' Responses\n' + 0 + '% of total responses' + "\nMean: " + 4.60 + "\nStandard Deviation: " + 0.49 + "\nTotal Responses: " + 5, 0, 0 + ' Responses\n' + 0 + '% of total responses' + "\nMean: " + 4.40 + "\nStandard Deviation: " + 0.49 + "\nTotal Responses: " + 5],
+                                                    ['Strongly Disagree', 0, 0 + ' Responses\n' + 0 + '% of total responses' + "\nMean: " + 4.60 + "\nStandard Deviation: " + 0.49 + "\nTotal Responses: " + 5, 0, 0 + ' Responses\n' + 0 + '% of total responses' + "\nMean: " + 4.40 + "\nStandard Deviation: " + 0.49 + "\nTotal Responses: " + 5]
+                                                ]);
+
+                                                var options = {
+                                                    colors: ['#990000', '#004470'],
+                                                    backgroundColor: { fill: 'transparent' },
+
+                                                    chartArea: {left: '40'}
+                                                };
+
+                                                var chart = new google.visualization.ColumnChart($(lshteren)[0]);
+                        chart.draw(data, options);
+                                            }
+                                            $(window).on('resize', drawInstructorChart);
+                    </script>
+
+
+        </div>        <div class="row">
+            <div class="col-sm-12">
+
+
+
+                <h4>Ridha Kamoua <small> <a style="margin-left: 20px; font-size: 80%; text-decoration: none;" class="arrow-link" href="https://classie-evals.stonybrook.edu/Instructor/rkamoua">View Profile</a></small></h4>
+            </div>
+
+
+
+                    <div class="col-sm-12" id="rkamoua" style="margin: 0px auto; height:400px"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 1170px; height: 400px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="1170" height="400" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_24"><clippath id="_ABSTRACT_RENDERER_ID_25"><rect x="40" y="77" width="856" height="247"></rect></clippath></defs><g><rect x="911" y="77" width="244" height="79" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><rect x="911" y="77" width="244" height="35" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="947" y="89.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">The instructor was effective in</text><text text-anchor="start" x="947" y="109.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">teaching the subject matter</text></g><rect x="911" y="77" width="30" height="15" stroke="none" stroke-width="0" fill="#990000"></rect></g><g><rect x="911" y="121" width="244" height="35" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="947" y="133.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">Instructor expectations of</text><text text-anchor="start" x="947" y="153.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">students were reasonable</text></g><rect x="911" y="121" width="30" height="15" stroke="none" stroke-width="0" fill="#004470"></rect></g></g><g><rect x="40" y="77" width="856" height="247" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://classie-evals.stonybrook.edu/Section/details/ESE/325/01/LEC/1188/96160#_ABSTRACT_RENDERER_ID_25)"><g><rect x="40" y="323" width="856" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="40" y="282" width="856" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="40" y="241" width="856" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="40" y="200" width="856" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="40" y="159" width="856" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="40" y="118" width="856" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="40" y="77" width="856" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="40" y="303" width="856" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="40" y="262" width="856" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="40" y="221" width="856" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="40" y="180" width="856" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="40" y="139" width="856" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="40" y="98" width="856" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect></g><g><rect x="73" y="78" width="53" height="245" stroke="none" stroke-width="0" fill="#990000"></rect><rect x="244" y="242" width="53" height="81" stroke="none" stroke-width="0" fill="#990000"></rect><rect x="415" y="242" width="53" height="81" stroke="none" stroke-width="0" fill="#990000"></rect><rect x="586" y="323" width="53" height="0.5" stroke="none" stroke-width="0" fill="#990000"></rect><rect x="757" y="323" width="53" height="0.5" stroke="none" stroke-width="0" fill="#990000"></rect><rect x="127" y="78" width="52" height="245" stroke="none" stroke-width="0" fill="#004470"></rect><rect x="298" y="323" width="52" height="0.5" stroke="none" stroke-width="0" fill="#004470"></rect><rect x="469" y="242" width="52" height="81" stroke="none" stroke-width="0" fill="#004470"></rect><rect x="640" y="242" width="52" height="81" stroke="none" stroke-width="0" fill="#004470"></rect><rect x="811" y="323" width="52" height="0.5" stroke="none" stroke-width="0" fill="#004470"></rect></g><g><rect x="40" y="323" width="856" height="1" stroke="none" stroke-width="0" fill="#333333"></rect></g></g><g></g><g><g><text text-anchor="middle" x="126" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">Strongly Agree</text></g><g><text text-anchor="middle" x="297" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">Agree</text></g><g><text text-anchor="middle" x="468" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">Neutral</text></g><g><text text-anchor="middle" x="639" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">Disagree</text></g><g><text text-anchor="middle" x="810" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">Strongly Disagree</text></g><g><text text-anchor="end" x="30.5" y="328.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">0.0</text></g><g><text text-anchor="end" x="30.5" y="287.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">0.5</text></g><g><text text-anchor="end" x="30.5" y="246.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">1.0</text></g><g><text text-anchor="end" x="30.5" y="205.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">1.5</text></g><g><text text-anchor="end" x="30.5" y="164.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">2.0</text></g><g><text text-anchor="end" x="30.5" y="123.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">2.5</text></g><g><text text-anchor="end" x="30.5" y="82.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">3.0</text></g></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th></th><th>The instructor was effective in teaching the subject matter</th><th>Instructor expectations of students were reasonable</th></tr></thead><tbody><tr><td>Strongly Agree</td><td>3</td><td>3</td></tr><tr><td>Agree</td><td>1</td><td>0</td></tr><tr><td>Neutral</td><td>1</td><td>1</td></tr><tr><td>Disagree</td><td>0</td><td>1</td></tr><tr><td>Strongly Disagree</td><td>0</td><td>0</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 410px; left: 1180px; white-space: nowrap; font-family: Arial; font-size: 15px;">students were reasonable</div><div></div></div></div>
+                    <script type="text/javascript">
+                                            google.charts.setOnLoadCallback(drawInstructorChart);
+
+
+
+                        function drawInstructorChart() {
+                            var data = google.visualization.arrayToDataTable([
+
+                                ['', 'The instructor was effective in teaching the subject matter', {role: 'tooltip'}, 'Instructor expectations of students were reasonable', {role: 'tooltip'}],
+                                                    ['Strongly Agree', 3, 3 + ' Responses\n' + 60 + '% of total responses: ' + "\nMean: " + 4.40 + "\nStandard Deviation: " + 0.80 + "\nTotal Responses: " + 5, 3, 3 + ' Responses\n' + 60 + '% of total responses' + "\nMean: " + 4.00 + "\nStandard Deviation: " + 1.26 + "\nTotal Responses: " + 5],
+                                                    ['Agree', 1, 1 + ' Responses\n' + 20 + '% of total responses' + "\nMean: " + 4.40 + "\nStandard Deviation: " + 0.80 + "\nTotal Responses: " + 5, 0, 0 + ' Responses\n' + 0 + '% of total responses' + "\nMean: " + 4.00 + "\nStandard Deviation: " + 1.26 + "\nTotal Responses: " + 5],
+                                                    ['Neutral', 1, 1 + ' Responses\n' + 20 + '% of total responses' + "\nMean: " + 4.40 + "\nStandard Deviation: " + 0.80 + "\nTotal Responses: " + 5, 1, 1 + ' Responses\n' + 20 + '% of total responses' + "\nMean: " + 4.00 + "\nStandard Deviation: " + 1.26 + "\nTotal Responses: " + 5],
+                                                    ['Disagree', 0, 0 + ' Responses\n' + 0 + '% of total responses' + "\nMean: " + 4.40 + "\nStandard Deviation: " + 0.80 + "\nTotal Responses: " + 5, 1, 1 + ' Responses\n' + 20 + '% of total responses' + "\nMean: " + 4.00 + "\nStandard Deviation: " + 1.26 + "\nTotal Responses: " + 5],
+                                                    ['Strongly Disagree', 0, 0 + ' Responses\n' + 0 + '% of total responses' + "\nMean: " + 4.40 + "\nStandard Deviation: " + 0.80 + "\nTotal Responses: " + 5, 0, 0 + ' Responses\n' + 0 + '% of total responses' + "\nMean: " + 4.00 + "\nStandard Deviation: " + 1.26 + "\nTotal Responses: " + 5]
+                                                ]);
+
+                                                var options = {
+                                                    colors: ['#990000', '#004470'],
+                                                    backgroundColor: { fill: 'transparent' },
+
+                                                    chartArea: {left: '40'}
+                                                };
+
+                                                var chart = new google.visualization.ColumnChart($(rkamoua)[0]);
+                        chart.draw(data, options);
+                                            }
+                                            $(window).on('resize', drawInstructorChart);
+                    </script>
+
+
+        </div>        <div class="row">
+            <div class="col-sm-12">
+
+
+
+                <h4>Milutin Stanacevic <small> <a style="margin-left: 20px; font-size: 80%; text-decoration: none;" class="arrow-link" href="https://classie-evals.stonybrook.edu/Instructor/mstanacevic">View Profile</a></small></h4>
+            </div>
+
+
+
+                    <div class="col-sm-12" id="mstanacevic" style="margin: 0px auto; height:400px"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 1170px; height: 400px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="1170" height="400" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_26"><clippath id="_ABSTRACT_RENDERER_ID_27"><rect x="40" y="77" width="856" height="247"></rect></clippath></defs><g><rect x="911" y="77" width="244" height="79" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><rect x="911" y="77" width="244" height="35" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="947" y="89.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">The instructor was effective in</text><text text-anchor="start" x="947" y="109.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">teaching the subject matter</text></g><rect x="911" y="77" width="30" height="15" stroke="none" stroke-width="0" fill="#990000"></rect></g><g><rect x="911" y="121" width="244" height="35" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="947" y="133.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">Instructor expectations of</text><text text-anchor="start" x="947" y="153.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">students were reasonable</text></g><rect x="911" y="121" width="30" height="15" stroke="none" stroke-width="0" fill="#004470"></rect></g></g><g><rect x="40" y="77" width="856" height="247" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://classie-evals.stonybrook.edu/Section/details/ESE/325/01/LEC/1188/96160#_ABSTRACT_RENDERER_ID_27)"><g><rect x="40" y="323" width="856" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="40" y="282" width="856" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="40" y="241" width="856" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="40" y="200" width="856" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="40" y="159" width="856" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="40" y="118" width="856" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="40" y="77" width="856" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="40" y="303" width="856" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="40" y="262" width="856" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="40" y="221" width="856" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="40" y="180" width="856" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="40" y="139" width="856" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect><rect x="40" y="98" width="856" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect></g><g><rect x="73" y="160" width="53" height="163" stroke="none" stroke-width="0" fill="#990000"></rect><rect x="244" y="323" width="53" height="0.5" stroke="none" stroke-width="0" fill="#990000"></rect><rect x="415" y="160" width="53" height="163" stroke="none" stroke-width="0" fill="#990000"></rect><rect x="586" y="242" width="53" height="81" stroke="none" stroke-width="0" fill="#990000"></rect><rect x="757" y="323" width="53" height="0.5" stroke="none" stroke-width="0" fill="#990000"></rect><rect x="127" y="78" width="52" height="245" stroke="none" stroke-width="0" fill="#004470"></rect><rect x="298" y="323" width="52" height="0.5" stroke="none" stroke-width="0" fill="#004470"></rect><rect x="469" y="160" width="52" height="163" stroke="none" stroke-width="0" fill="#004470"></rect><rect x="640" y="323" width="52" height="0.5" stroke="none" stroke-width="0" fill="#004470"></rect><rect x="811" y="323" width="52" height="0.5" stroke="none" stroke-width="0" fill="#004470"></rect></g><g><rect x="40" y="323" width="856" height="1" stroke="none" stroke-width="0" fill="#333333"></rect></g></g><g></g><g><g><text text-anchor="middle" x="126" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">Strongly Agree</text></g><g><text text-anchor="middle" x="297" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">Agree</text></g><g><text text-anchor="middle" x="468" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">Neutral</text></g><g><text text-anchor="middle" x="639" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">Disagree</text></g><g><text text-anchor="middle" x="810" y="345.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#222222">Strongly Disagree</text></g><g><text text-anchor="end" x="30.5" y="328.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">0.0</text></g><g><text text-anchor="end" x="30.5" y="287.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">0.5</text></g><g><text text-anchor="end" x="30.5" y="246.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">1.0</text></g><g><text text-anchor="end" x="30.5" y="205.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">1.5</text></g><g><text text-anchor="end" x="30.5" y="164.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">2.0</text></g><g><text text-anchor="end" x="30.5" y="123.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">2.5</text></g><g><text text-anchor="end" x="30.5" y="82.75" font-family="Arial" font-size="15" stroke="none" stroke-width="0" fill="#444444">3.0</text></g></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th></th><th>The instructor was effective in teaching the subject matter</th><th>Instructor expectations of students were reasonable</th></tr></thead><tbody><tr><td>Strongly Agree</td><td>2</td><td>3</td></tr><tr><td>Agree</td><td>0</td><td>0</td></tr><tr><td>Neutral</td><td>2</td><td>2</td></tr><tr><td>Disagree</td><td>1</td><td>0</td></tr><tr><td>Strongly Disagree</td><td>0</td><td>0</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 410px; left: 1180px; white-space: nowrap; font-family: Arial; font-size: 15px;">students were reasonable</div><div></div></div></div>
+                    <script type="text/javascript">
+                                            google.charts.setOnLoadCallback(drawInstructorChart);
+
+
+
+                        function drawInstructorChart() {
+                            var data = google.visualization.arrayToDataTable([
+
+                                ['', 'The instructor was effective in teaching the subject matter', {role: 'tooltip'}, 'Instructor expectations of students were reasonable', {role: 'tooltip'}],
+                                                    ['Strongly Agree', 2, 2 + ' Responses\n' + 40 + '% of total responses: ' + "\nMean: " + 3.60 + "\nStandard Deviation: " + 1.20 + "\nTotal Responses: " + 5, 3, 3 + ' Responses\n' + 60 + '% of total responses' + "\nMean: " + 4.20 + "\nStandard Deviation: " + 0.98 + "\nTotal Responses: " + 5],
+                                                    ['Agree', 0, 0 + ' Responses\n' + 0 + '% of total responses' + "\nMean: " + 3.60 + "\nStandard Deviation: " + 1.20 + "\nTotal Responses: " + 5, 0, 0 + ' Responses\n' + 0 + '% of total responses' + "\nMean: " + 4.20 + "\nStandard Deviation: " + 0.98 + "\nTotal Responses: " + 5],
+                                                    ['Neutral', 2, 2 + ' Responses\n' + 40 + '% of total responses' + "\nMean: " + 3.60 + "\nStandard Deviation: " + 1.20 + "\nTotal Responses: " + 5, 2, 2 + ' Responses\n' + 40 + '% of total responses' + "\nMean: " + 4.20 + "\nStandard Deviation: " + 0.98 + "\nTotal Responses: " + 5],
+                                                    ['Disagree', 1, 1 + ' Responses\n' + 20 + '% of total responses' + "\nMean: " + 3.60 + "\nStandard Deviation: " + 1.20 + "\nTotal Responses: " + 5, 0, 0 + ' Responses\n' + 0 + '% of total responses' + "\nMean: " + 4.20 + "\nStandard Deviation: " + 0.98 + "\nTotal Responses: " + 5],
+                                                    ['Strongly Disagree', 0, 0 + ' Responses\n' + 0 + '% of total responses' + "\nMean: " + 3.60 + "\nStandard Deviation: " + 1.20 + "\nTotal Responses: " + 5, 0, 0 + ' Responses\n' + 0 + '% of total responses' + "\nMean: " + 4.20 + "\nStandard Deviation: " + 0.98 + "\nTotal Responses: " + 5]
+                                                ]);
+
+                                                var options = {
+                                                    colors: ['#990000', '#004470'],
+                                                    backgroundColor: { fill: 'transparent' },
+
+                                                    chartArea: {left: '40'}
+                                                };
+
+                                                var chart = new google.visualization.ColumnChart($(mstanacevic)[0]);
+                        chart.draw(data, options);
+                                            }
+                                            $(window).on('resize', drawInstructorChart);
+                    </script>
+
+
+        </div>        </div>
+    </section>
+
+
+
+
+        <!--End role=main-->
+        <footer class="site-footer">
+            <div class="top-footer fluffy dark-footer">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-3">
+                            <div class="footer-nav">
+                                <strong>Course Catalog Tools</strong>
+                                <ul>
+                                    <li><a href="http://classie.stonybrook.edu/">Syllabi</a></li>
+                                    <li><a href="https://classie-evals.stonybrook.edu/">Evaluation Explorer</a></li>
+                                    <li><a href="https://it.stonybrook.edu/help/kb/removing-a-comment-from-an-evaluation">Comment Removal Policy </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-nav">
+                                <strong>Course Evaluations</strong>
+                                <ul>
+                                    <li><a href="https://it.stonybrook.edu/services/course-evaluations-faculty">For Faculty</a></li>
+                                    <li><a href="https://it.stonybrook.edu/services/course-evaluations-students">For Students</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-nav">
+                                <strong>Quick Links</strong>
+                                <ul>
+                                    <li><a href="http://www.stonybrook.edu/celt">CELT</a></li>
+                                    <li><a href="http://classfind.stonybrook.edu/">Class Find</a></li>
+                                    <li><a href="http://blackboard.stonybrook.edu/">Blackboard</a></li>
+                                    <li><a href="http://stonybrook.edu/solar">SOLAR</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="social-links">
+                                <h3>Connect with @SBUDoIT</h3>
+
+
+                                <a href="https://www.facebook.com/sbudoit" class="social-link social-link--facebook">
+                                    <span class="sr-only">Facebook</span>
+                                </a>
+
+                                <a href="https://twitter.com/sbudoit" class="social-link social-link--twitter">
+                                    <span class="sr-only">Twitter</span>
+                                </a>
+
+                                <a href="https://www.youtube.com/channel/UCbOzIblxmg-Ing9NSEms8Tw" class="social-link social-link--youtube">
+                                    <span class="sr-only">YouTube</span>
+                                </a>
+
+                                <a href="https://www.flickr.com/photos/101383158@N02/" class="social-link social-link--flickr">
+                                    <span class="sr-only">Flickr</span>
+                                </a>
+
+                                <a href="https://instagram.com/sbudoit" class="social-link social-link--instagram">
+                                    <span class="sr-only">Instagram</span>
+                                </a>
+
+                                <a href="https://www.yammer.com/stonybrook.edu/" class="social-link social-link--yammer">
+                                    <span class="sr-only">Yammer</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row cozy">
+                        <div class="col-sm-12">
+                            <p>
+                                Copyright © 2008-2016 Stony Brook University Division of Information Technology - All Rights Reserved<br>
+
+                                <br>
+                                Classie Evaluation Explorer - Version: 1.30.0.39
+                                <br>
+                                    Current User: aavarghese
+                                <br>
+
+                                Phone: (631) 632-9800 | <a href="https://service.stonybrook.edu/">Submit Service Ticket</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+
+            <script src="./ESE325-01 _ Classie Evaluation Explorer_files/footer.dev.js.download"></script>
+
+
+
+
+
+
+
+
+
+
+    </body></html>
