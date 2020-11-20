@@ -166,3 +166,202 @@ The comprehensive lab course which occurs in parallel with the actual lectures
   }
 ]
 Ken Short is the GOAT. Lectures on timer/counters and SPI were most valuable.
+[
+  {
+    "text": "Goat",
+    "relevance": 0.860971,
+    "dbpedia_resource": "http://dbpedia.org/resource/Goat_(disambiguation)"
+  },
+  {
+    "text": "Malcolm St. Clair",
+    "relevance": 0.842117,
+    "dbpedia_resource": "http://dbpedia.org/resource/Malcolm_St._Clair_(filmmaker)"
+  }
+]
+laboratories, while a lot of work, were very good to illustrate the material
+[
+  {
+    "text": "The Material",
+    "relevance": 0.854864,
+    "dbpedia_resource": "http://dbpedia.org/resource/The_Material"
+  },
+  {
+    "text": "Thermodynamics",
+    "relevance": 0.789711,
+    "dbpedia_resource": "http://dbpedia.org/resource/Thermodynamics"
+  }
+]
+Learning about embedded microprocessor systems designs.
+[
+  {
+    "text": "Microprocessor",
+    "relevance": 0.955286,
+    "dbpedia_resource": "http://dbpedia.org/resource/Microprocessor"
+  },
+  {
+    "text": "Microcontroller",
+    "relevance": 0.628967,
+    "dbpedia_resource": "http://dbpedia.org/resource/Microcontroller"
+  }
+]
+The hands on experience.
+[]
+The only thing wrong with this class is the grading.  The grading is inconsistent across the different TAs and is designed to make students get less points than they deserve, and the regrade policy is designed to make students accept unfair grades because getting them corrected is too much work and could result in losing even more points.  Points were taken off for no good reason (or no apparent reason at all), or for not doing something that the question didn't ask for, and it was difficult to confront them about the grading because they didn't all have office hours.  The TAs who graded a particular exam should be required to hold dedicated office hours after that exam has been graded and returned to students so that grading issues can be discussed at a convenient time.  Sometimes the questions at the end of the labs are ambiguous and the TAs don't help you understand what it is asking, which leads to not getting any credit for your work.  More frustratingly, some questions have more than one correct answer but if your answer didn't happen to be the one on their 'solutions' you don't get any points for it even though it was also a correct response.  The grading requirements for the theory sections are not revealed until after they have been submitted so that you don't know what they were looking for until it's too late to correct it.  A demanding course is one thing but that shouldn't mean that students are graded unfairly for their hard work.
+[
+  {
+    "text": "Question",
+    "relevance": 0.968615,
+    "dbpedia_resource": "http://dbpedia.org/resource/Question"
+  },
+  {
+    "text": "Grade",
+    "relevance": 0.7308,
+    "dbpedia_resource": "http://dbpedia.org/resource/Grade"
+  }
+]
+This class has very clearly defined policies, such as the grading policies and the expectations for assignments. However, the notorious theory section of the labs, and the labs in general, wouldn't have their grading rubrics available until after the lab was graded, so it often felt like the grading of labs could be rather arbitrary for the 'subjective' portions of gradings of the lab. In addition, if a valid answer is given, but it isn't an answer the solution manual gives for a lab or exam, you'd have to be able to move Mount Everest before some of the grading TAs would be willing to acknowledge their mistakes.
+[
+  {
+    "text": "Grade",
+    "relevance": 0.932431,
+    "dbpedia_resource": "http://dbpedia.org/resource/Grade"
+  }
+]
+The Lab should definitely have at least 3 members per group as it is too much work for 1 single person if the other lab partner doesn't try. Many of my other courses were sacrificed to finish the labs. Not enough example of Assembly language code provided to the point the professor had to do assembly language tutorial classes to get everyone caught up. More example codes in class or in the lab files would be nice. Many students are lost and are not offered any kind of help with code until it is too late in the semester
+[
+  {
+    "text": "Assembly language",
+    "relevance": 0.951509,
+    "dbpedia_resource": "http://dbpedia.org/resource/Assembly_language"
+  },
+  {
+    "text": "Subroutine",
+    "relevance": 0.899761,
+    "dbpedia_resource": "http://dbpedia.org/resource/Subroutine"
+  }
+]
+Professor Short, while very thorough, was a little too slow for me at times. As a sleep-deprived student, his slow-going deep voice sometimes made it tough for me to stay awake. One other frustrating point: the lab lecture was often given after my lab section's prelab was due or sometimes even after my lab section altogether. It'd be nice if there was a way to ensure the lab lecture was always given prior to the prelab due date for every lab section.
+[
+  {
+    "text": "University",
+    "relevance": 0.884791,
+    "dbpedia_resource": "http://dbpedia.org/resource/University"
+  }
+]
+less writeups for labs? I would have preferred to concentrate on the hardware/software aspect. In one lab in particular, there were 6 tasks (programs) we did not get past task three, as it was very complicated and i was very disappointed,as i wanted to do all 6. a time extension would have been good - it was lab 4, i think.
+[
+  {
+    "text": "Task",
+    "relevance": 0.91136,
+    "dbpedia_resource": "http://dbpedia.org/resource/Task"
+  },
+  {
+    "text": "Philosophical terminology",
+    "relevance": 0.904471,
+    "dbpedia_resource": "http://dbpedia.org/resource/Philosophical_terminology"
+  }
+]
+It would've been nice if the handwritten notes he did in lecture would be posted. I would miss information sometimes writing one thing down while he moved onto the next. I would've much rather just sit and pay attention and then go home, review the notes and be like 'oh, i remember that.'
+[
+  {
+    "text": "Dissociative identity disorder",
+    "relevance": 0.878864,
+    "dbpedia_resource": "http://dbpedia.org/resource/Dissociative_identity_disorder"
+  },
+  {
+    "text": "Desperate Housewives",
+    "relevance": 0.86184,
+    "dbpedia_resource": "http://dbpedia.org/resource/Desperate_Housewives"
+  }
+]
+The course could be improved if there was more practice on assembly language coding problems and if the textbook gave more examples on the coding as assembly language feels unconventional to many people who work with object-oriented programming.
+[
+  {
+    "text": "Programming language",
+    "relevance": 0.944998,
+    "dbpedia_resource": "http://dbpedia.org/resource/Programming_language"
+  },
+  {
+    "text": "Subroutine",
+    "relevance": 0.922057,
+    "dbpedia_resource": "http://dbpedia.org/resource/Subroutine"
+  }
+]
+Course moves kind of fast, could spend more time doing actual examples of code and hardware instead of just theory. Extremely strict deadlines with no leeway, material is very difficult. Cannot afford to miss any days of class
+[
+  {
+    "text": "Data type",
+    "relevance": 0.9072,
+    "dbpedia_resource": "http://dbpedia.org/resource/Data_type"
+  }
+]
+Increase the pace of the class, table look-up can be a 15 minute lesson, as could the button the debouncing, LED circuits, pull-up resistors, etc... Speed these up then add ADC's after SPI.
+[
+  {
+    "text": "Lookup table",
+    "relevance": 0.886784,
+    "dbpedia_resource": "http://dbpedia.org/resource/Lookup_table"
+  },
+  {
+    "text": "Array data structure",
+    "relevance": 0.82944,
+    "dbpedia_resource": "http://dbpedia.org/resource/Array_data_structure"
+  }
+]
+The last few weeks of the course accelerate rapidly and cover some very dense material. Better pacing at the beginning of the semester to prevent cramming at the end would be appreciated.
+[
+  {
+    "text": "The End",
+    "relevance": 0.900507,
+    "dbpedia_resource": "http://dbpedia.org/resource/The_End_(The_X-Files)"
+  }
+]
+The labs towards the end are a little harder, but doable. Other than that, the class was great.
+[
+  {
+    "text": "English-language films",
+    "relevance": 0.844343,
+    "dbpedia_resource": "http://dbpedia.org/resource/English-language_films"
+  },
+  {
+    "text": "Ilmar Raag",
+    "relevance": 0.750845,
+    "dbpedia_resource": "http://dbpedia.org/resource/Ilmar_Raag"
+  }
+]
+Better practice exams so we can be properly prepared for the questions he asks on the tests
+[
+  {
+    "text": "Question",
+    "relevance": 0.91136,
+    "dbpedia_resource": "http://dbpedia.org/resource/Question"
+  }
+]
+Have the lab lecture be more detailed and before the lab sections occur.
+[]
+I think some more time explaining stacks and timers would be helpful.
+[
+  {
+    "text": "Clock",
+    "relevance": 0.849013,
+    "dbpedia_resource": "http://dbpedia.org/resource/Clock"
+  },
+  {
+    "text": "Critical thinking",
+    "relevance": 0.730488,
+    "dbpedia_resource": "http://dbpedia.org/resource/Critical_thinking"
+  }
+]
+The last SPI unit was a little rushed, but things happen.
+[]
+bigger room for review sessions.
+[]
+Discuss things slower in class
+[
+  {
+    "text": "Parliamentary procedure",
+    "relevance": 0.865482,
+    "dbpedia_resource": "http://dbpedia.org/resource/Parliamentary_procedure"
+  }
+]
+none
