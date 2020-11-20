@@ -47,7 +47,9 @@ with open('./Sample_Class_CSV_Files/' + file, newline='') as csvfile:
     for j in needs_improvement:
         print(j)
         print("\n")
-        response = NLU.analyze(text = i, features = Features(categories = CategoriesOptions(explanation= True, limit = 3))).get_result()
+        OutputFile.write(j)
+        OutputFile.write("\n")
+        response = NLU.analyze(text = j, features = Features(categories = CategoriesOptions(explanation= True, limit = 3))).get_result()
         print(json.dumps(response["categories"],indent = 2))
         print("\n")
         OutputFile.write(json.dumps(response["categories"],indent = 2))
