@@ -49,7 +49,7 @@ with open('./Sample_Class_CSV_Files/' + file, newline='') as csvfile:
         print("\n")
         OutputFile.write(j)
         OutputFile.write("\n")
-        response = NLU.analyze(text = i, features = Features(emotion = EmotionOptions(document=True))).get_result()
+        response = NLU.analyze(text = j, features = Features(emotion = EmotionOptions(document=True))).get_result()
         print(json.dumps(response["emotion"],indent = 2))
         print("\n")
         OutputFile.write(json.dumps(response["emotion"],indent = 2))
