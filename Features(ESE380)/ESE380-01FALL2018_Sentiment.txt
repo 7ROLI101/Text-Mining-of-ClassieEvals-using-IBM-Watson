@@ -1,0 +1,217 @@
+
+{
+  "document": {
+    "score": 0.665701,
+    "label": "positive"
+  }
+}
+{
+  "document": {
+    "score": 0.569254,
+    "label": "positive"
+  }
+}
+{
+  "document": {
+    "score": 0.901502,
+    "label": "positive"
+  }
+}
+{
+  "document": {
+    "score": 0.912586,
+    "label": "positive"
+  }
+}
+{
+  "document": {
+    "score": 0.937512,
+    "label": "positive"
+  }
+}
+{
+  "document": {
+    "score": 0.858446,
+    "label": "positive"
+  }
+}
+{
+  "document": {
+    "score": 0.651926,
+    "label": "positive"
+  }
+}
+{
+  "document": {
+    "score": 0.623537,
+    "label": "positive"
+  }
+}
+{
+  "document": {
+    "score": 0.697372,
+    "label": "positive"
+  }
+}
+{
+  "document": {
+    "score": 0.99093,
+    "label": "positive"
+  }
+}
+{
+  "document": {
+    "score": 0.99365,
+    "label": "positive"
+  }
+}
+{
+  "document": {
+    "score": 0.917572,
+    "label": "positive"
+  }
+}
+{
+  "document": {
+    "score": 0.912228,
+    "label": "positive"
+  }
+}
+{
+  "document": {
+    "score": -0.706996,
+    "label": "negative"
+  }
+}
+{
+  "document": {
+    "score": 0,
+    "label": "neutral"
+  }
+}
+{
+  "document": {
+    "score": 0.806243,
+    "label": "positive"
+  }
+}
+{
+  "document": {
+    "score": 0.94573,
+    "label": "positive"
+  }
+}
+{
+  "document": {
+    "score": 0,
+    "label": "neutral"
+  }
+}
+{
+  "document": {
+    "score": 0,
+    "label": "neutral"
+  }
+}
+{
+  "document": {
+    "score": -0.810762,
+    "label": "negative"
+  }
+}
+{
+  "document": {
+    "score": 0.534246,
+    "label": "positive"
+  }
+}
+{
+  "document": {
+    "score": -0.598226,
+    "label": "negative"
+  }
+}
+{
+  "document": {
+    "score": -0.641357,
+    "label": "negative"
+  }
+}
+{
+  "document": {
+    "score": -0.857685,
+    "label": "negative"
+  }
+}
+{
+  "document": {
+    "score": -0.642493,
+    "label": "negative"
+  }
+}
+{
+  "document": {
+    "score": 0.621114,
+    "label": "positive"
+  }
+}
+{
+  "document": {
+    "score": -0.798963,
+    "label": "negative"
+  }
+}
+{
+  "document": {
+    "score": 0.552664,
+    "label": "positive"
+  }
+}
+{
+  "document": {
+    "score": -0.587695,
+    "label": "negative"
+  }
+}
+{
+  "document": {
+    "score": 0.772071,
+    "label": "positive"
+  }
+}
+{
+  "document": {
+    "score": 0.482041,
+    "label": "positive"
+  }
+}
+{
+  "document": {
+    "score": 0,
+    "label": "neutral"
+  }
+}
+{
+  "document": {
+    "score": 0.912581,
+    "label": "positive"
+  }
+}
+{
+  "document": {
+    "score": -0.716799,
+    "label": "negative"
+  }
+}
+{
+  "document": {
+    "score": 0,
+    "label": "neutral"
+  }
+}
+{
+  "document": {
+    "score": 0,
+    "label": "neutral"
+  }
+}
