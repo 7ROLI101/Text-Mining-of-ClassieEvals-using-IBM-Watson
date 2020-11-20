@@ -5,6 +5,8 @@ import scrape_parse
 import csv
 import json
 import os
+import os.path
+
 
 authenticator = IAMAuthenticator('rcXs4WvKrUtItOK0P1fv0mGGAC5ZfRth0ZNQWM17NIUT')
 NLU = NaturalLanguageUnderstandingV1(version = '2020-08-01', authenticator = authenticator)
@@ -19,7 +21,9 @@ with os.scandir('./Sample_Class_CSV_Files') as it:
     for entry in it:
         print(entry.name)
     file = input("Select a file you want to use: ")
-
+    fileName = file.split(".")
+    print(fileName[0])
+    
 with open('./Sample_Class_CSV_Files/' + file, newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
@@ -28,25 +32,23 @@ with open('./Sample_Class_CSV_Files/' + file, newline='') as csvfile:
         elif row["TYPE"] == "Needs Improvement":
             needs_improvement.append(row["COMMENT"])
     #prints the valuable comments into a output file called valuableOutput.txt
-    valuableOutputFile = open("valuableOutput.txt","w+")
-    valuableOutputFile.write("This is for Positive Comments")
-    valuableOutputFile.write("\n")
+    OutputFile = open(fileName[0] + "_Categories.txt","a+")
     for i in valuable:
         print(i)
         print("\n")
+        OutputFile.write(i)
+        OutputFile.write("\n")
         response = NLU.analyze(text = i, features = Features(categories = CategoriesOptions(explanation= True, limit = 3))).get_result()
-        print(json.dumps(response,indent = 1))
+        print(json.dumps(response["categories"],indent = 2))
         print("\n")
-        valuableOutputFile.write(json.dumps(response,indent = 1))
-        valuableOutputFile.write("\n")
-    #prints the needs_improvement comments into a output file called needsImprovementOutput.txt
-    needsImprovementOutputFile = open("needsImprovementOutput.txt","w+")
-    needsImprovementOutputFile.write("This is for Negative Comments" "\n")    
+        OutputFile.write(json.dumps(response["categories"],indent = 2))
+        OutputFile.write("\n")
+    #prints the needs_improvement comments into a output file called needsImprovementOutput.txt 
     for j in needs_improvement:
         print(j)
         print("\n")
         response = NLU.analyze(text = i, features = Features(categories = CategoriesOptions(explanation= True, limit = 3))).get_result()
-        print(response)
+        print(json.dumps(response["categories"],indent = 2))
         print("\n")
-        needsImprovementOutputFile.write(json.dumps(response,indent = 1))
-        needsImprovementOutputFile.write("\n")   
+        OutputFile.write(json.dumps(response["categories"],indent = 2))
+        OutputFile.write("\n")   
