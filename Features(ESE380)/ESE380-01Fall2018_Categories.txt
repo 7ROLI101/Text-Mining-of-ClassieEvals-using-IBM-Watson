@@ -1,0 +1,2692 @@
+ESE380 is a very valuable introduction and dive into the use and operation of microcontrollers. Prior to this class I knew little to nothing about what's going inside of a microcontroller. Professor Short paces the material nicely, from complete beginner (configuring port registers and assembly language syntax) to more advance features (like interrupts and timers).
+
+Now that I've completed the course, I feel confident in my abilities to apply microcontrollers in personal projects. My coding skills have gained too, knowing what is happening at such a low level in a computer puts a different twist on how one view's a program.
+ESE380 is a very valuable introduction and dive into the use and operation of microcontrollers. Prior to this class I knew little to nothing about what's going inside of a microcontroller. Professor Short paces the material nicely, from complete beginner (configuring port registers and assembly language syntax) to more advance features (like interrupts and timers).
+
+Now that I've completed the course, I feel confident in my abilities to apply microcontrollers in personal projects. My coding skills have gained too, knowing what is happening at such a low level in a computer puts a different twist on how one view's a program.
+ESE380 is a very valuable introduction and dive into the use and operation of microcontrollers. Prior to this class I knew little to nothing about what's going inside of a microcontroller. Professor Short paces the material nicely, from complete beginner (configuring port registers and assembly language syntax) to more advance features (like interrupts and timers).
+
+Now that I've completed the course, I feel confident in my abilities to apply microcontrollers in personal projects. My coding skills have gained too, knowing what is happening at such a low level in a computer puts a different twist on how one view's a program.
+[
+  {
+    "score": 0.978031,
+    "label": "/technology and computing/hardware/computer peripherals",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "computer"
+        },
+        {
+          "text": "microcontrollers"
+        },
+        {
+          "text": "registers"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.907669,
+    "label": "/technology and computing/hardware/computer components/chips and processors",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "registers"
+        },
+        {
+          "text": "microcontrollers"
+        },
+        {
+          "text": "computer"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.861561,
+    "label": "/technology and computing/hardware/computer",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "computer"
+        },
+        {
+          "text": "registers"
+        },
+        {
+          "text": "use"
+        }
+      ]
+    }
+  }
+]
+This course, while definitely a lot of work, was a rewarding experience.  Professor Short's lectures are organized and well-taught.  The material is challenging, but if you attend lecture and work on the lab each week (don't alternate which lab partner writes the code and especially never have one partner do all the labs) you should be able to understand most of it pretty well.  There is a lot to be learned in this class.
+[
+  {
+    "score": 0.717212,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        },
+        {
+          "text": "learned"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.650724,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        },
+        {
+          "text": "one"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.650079,
+    "label": "/science",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "lectures"
+        },
+        {
+          "text": "work"
+        }
+      ]
+    }
+  }
+]
+The hands-on opportunities with a microcontroller is valuable and the concepts covered in class elucidating embedded systems designs with practice with assembly language is beneficial as assembly language is a low-level language; however, it is necessary when working with embedded systems which is everywhere in this contemporary and technologically-advanced society.
+[
+  {
+    "score": 0.983616,
+    "label": "/education/english as a second language",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "language"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.901106,
+    "label": "/technology and computing/hardware/computer peripherals",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "microcontroller"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.867624,
+    "label": "/technology and computing/operating systems",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "embedded systems"
+        }
+      ]
+    }
+  }
+]
+The class is mainly on assembly language which is helpful to learn. Professor short made tutorials outside of class in order to ensure everyone understood how to program the micro-controllers which was extremely helpful, since he did it when he didn't have to. He always posts his material days before class so you know what is going on that day
+[
+  {
+    "score": 0.77723,
+    "label": "/technology and computing/hardware/computer peripherals",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "controllers"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.675415,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "learn"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660691,
+    "label": "/technology and computing/hardware/computer components",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "controllers"
+        }
+      ]
+    }
+  }
+]
+I have now learned many skills that provide me with a basis of understanding of embedded system design. I feel confidant that I will be able to dream up devices and implement them now that I know how to program a microcontroller, use assembly language, and understand the basics of computer architecture.
+[
+  {
+    "score": 0.996742,
+    "label": "/technology and computing/hardware/computer peripherals",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "computer"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.991736,
+    "label": "/technology and computing/hardware/computer",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "computer"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.975147,
+    "label": "/technology and computing/hardware/computer components",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "computer"
+        }
+      ]
+    }
+  }
+]
+Amazing class Professor Short is one of the best professors I've had. He teaches the material extremely well and has valuable resources to help you learn the material. If you're thinking about taking this class do it. It's alot of work but you really do learn alot.
+[
+  {
+    "score": 0.806866,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "learn"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.799859,
+    "label": "/education/teaching and classroom resources",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "resources"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.742437,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "learn"
+        }
+      ]
+    }
+  }
+]
+Honestly, I do not think I've ever learned more in a singular class in my life. Professor Short expects a great deal from his students but, so long as you put in the effort it will show in your grades.
+[
+  {
+    "score": 0.878695,
+    "label": "/education/special education",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "grades"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.814426,
+    "label": "/education/school",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "students"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.802692,
+    "label": "/education/high school",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "grades"
+        }
+      ]
+    }
+  }
+]
+The lectures were extremely informative. I only wished I started reading through all of them way before the final exam. It would've been cool to test out some of the instructions in lab.
+[
+  {
+    "score": 0.812204,
+    "label": "/technology and computing/hardware/computer components/chips and processors",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "instructions"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.702185,
+    "label": "/sports/cricket",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "test"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.69958,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "reading"
+        }
+      ]
+    }
+  }
+]
+I think the explanations of the more complex labs alongside the regular lectures really helped to give me an understanding of some of the labs that I had trouble with.
+[
+  {
+    "score": 0.749003,
+    "label": "/science",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "explanations"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.664487,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "understanding"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.601382,
+    "label": "/science/biology",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "explanations"
+        }
+      ]
+    }
+  }
+]
+I found it really valuable to learn about microcontrollers and assembly language. Using Atmel Studio was interesting.
+[
+  {
+    "score": 0.899799,
+    "label": "/technology and computing/hardware/computer components/chips and processors",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "microcontrollers"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.89885,
+    "label": "/technology and computing/hardware/computer peripherals",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "microcontrollers"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.764499,
+    "label": "/education/english as a second language",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "language"
+        }
+      ]
+    }
+  }
+]
+This class is fantastic. I'm EE, but I still really enjoyed learning about embedded systems and learning assembly.
+[
+  {
+    "score": 0.808135,
+    "label": "/technology and computing/operating systems",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "embedded systems"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.787757,
+    "label": "/education/language learning",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "learning"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.779095,
+    "label": "/education/teaching and classroom resources",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "learning"
+        }
+      ]
+    }
+  }
+]
+This course beats you over the head with work but you learn a great deal about embedded systems at the end.
+[
+  {
+    "score": 0.891473,
+    "label": "/technology and computing/operating systems",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "embedded systems"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.780114,
+    "label": "/technology and computing/hardware/computer components/chips and processors",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "embedded systems"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.717077,
+    "label": "/technology and computing/hardware/computer peripherals",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "embedded systems"
+        }
+      ]
+    }
+  }
+]
+This course made understand microprocessors deeper and made me learn to use assembly code efficiently.
+[
+  {
+    "score": 0.976276,
+    "label": "/technology and computing/hardware/computer components/chips and processors",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "microprocessors"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.829811,
+    "label": "/technology and computing/hardware/computer",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "microprocessors"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.828094,
+    "label": "/technology and computing/operating systems",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "code"
+        }
+      ]
+    }
+  }
+]
+The professor, one of the few that can clearly teach the difficult material in this major
+[
+  {
+    "score": 0.702006,
+    "label": "/education",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "teach"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.678365,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "teach"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.672994,
+    "label": "/education/teaching and classroom resources",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "teach"
+        }
+      ]
+    }
+  }
+]
+The comprehensive lab course which occurs in parallel with the actual lectures
+[
+  {
+    "score": 0.693583,
+    "label": "/science",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "lectures"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.580904,
+    "label": "/education",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "comprehensive"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.580133,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "course"
+        }
+      ]
+    }
+  }
+]
+Ken Short is the GOAT. Lectures on timer/counters and SPI were most valuable.
+[
+  {
+    "score": 0.708774,
+    "label": "/technology and computing/hardware/computer peripherals",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "spi"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.571851,
+    "label": "/hobbies and interests/games",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "timer"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.564748,
+    "label": "/hobbies and interests/games/board games and puzzles",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "counters"
+        }
+      ]
+    }
+  }
+]
+laboratories, while a lot of work, were very good to illustrate the material
+[
+  {
+    "score": 0.61213,
+    "label": "/science",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "laboratories"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.607781,
+    "label": "/science/engineering",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "laboratories"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.54845,
+    "label": "/science/biology/biotechnology",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "laboratories"
+        }
+      ]
+    }
+  }
+]
+Learning about embedded microprocessor systems designs.
+[
+  {
+    "score": 0.964786,
+    "label": "/technology and computing/hardware/computer components/chips and processors",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "microprocessor"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.935454,
+    "label": "/technology and computing/hardware/computer peripherals",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "microprocessor"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.928803,
+    "label": "/technology and computing/hardware/computer",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "microprocessor"
+        }
+      ]
+    }
+  }
+]
+The hands on experience.
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+ESE380 is a very valuable introduction and dive into the use and operation of microcontrollers. Prior to this class I knew little to nothing about what's going inside of a microcontroller. Professor Short paces the material nicely, from complete beginner (configuring port registers and assembly language syntax) to more advance features (like interrupts and timers).
+
+Now that I've completed the course, I feel confident in my abilities to apply microcontrollers in personal projects. My coding skills have gained too, knowing what is happening at such a low level in a computer puts a different twist on how one view's a program.
+[
+  {
+    "score": 0.978031,
+    "label": "/technology and computing/hardware/computer peripherals",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "computer"
+        },
+        {
+          "text": "microcontrollers"
+        },
+        {
+          "text": "registers"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.907669,
+    "label": "/technology and computing/hardware/computer components/chips and processors",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "registers"
+        },
+        {
+          "text": "microcontrollers"
+        },
+        {
+          "text": "computer"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.861561,
+    "label": "/technology and computing/hardware/computer",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "computer"
+        },
+        {
+          "text": "registers"
+        },
+        {
+          "text": "use"
+        }
+      ]
+    }
+  }
+]
+This course, while definitely a lot of work, was a rewarding experience.  Professor Short's lectures are organized and well-taught.  The material is challenging, but if you attend lecture and work on the lab each week (don't alternate which lab partner writes the code and especially never have one partner do all the labs) you should be able to understand most of it pretty well.  There is a lot to be learned in this class.
+[
+  {
+    "score": 0.717212,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        },
+        {
+          "text": "learned"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.650724,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        },
+        {
+          "text": "one"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.650079,
+    "label": "/science",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "lectures"
+        },
+        {
+          "text": "work"
+        }
+      ]
+    }
+  }
+]
+The hands-on opportunities with a microcontroller is valuable and the concepts covered in class elucidating embedded systems designs with practice with assembly language is beneficial as assembly language is a low-level language; however, it is necessary when working with embedded systems which is everywhere in this contemporary and technologically-advanced society.
+[
+  {
+    "score": 0.983616,
+    "label": "/education/english as a second language",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "language"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.901106,
+    "label": "/technology and computing/hardware/computer peripherals",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "microcontroller"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.867624,
+    "label": "/technology and computing/operating systems",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "embedded systems"
+        }
+      ]
+    }
+  }
+]
+The class is mainly on assembly language which is helpful to learn. Professor short made tutorials outside of class in order to ensure everyone understood how to program the micro-controllers which was extremely helpful, since he did it when he didn't have to. He always posts his material days before class so you know what is going on that day
+[
+  {
+    "score": 0.77723,
+    "label": "/technology and computing/hardware/computer peripherals",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "controllers"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.675415,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "learn"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660691,
+    "label": "/technology and computing/hardware/computer components",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "controllers"
+        }
+      ]
+    }
+  }
+]
+I have now learned many skills that provide me with a basis of understanding of embedded system design. I feel confidant that I will be able to dream up devices and implement them now that I know how to program a microcontroller, use assembly language, and understand the basics of computer architecture.
+[
+  {
+    "score": 0.996742,
+    "label": "/technology and computing/hardware/computer peripherals",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "computer"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.991736,
+    "label": "/technology and computing/hardware/computer",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "computer"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.975147,
+    "label": "/technology and computing/hardware/computer components",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "computer"
+        }
+      ]
+    }
+  }
+]
+Amazing class Professor Short is one of the best professors I've had. He teaches the material extremely well and has valuable resources to help you learn the material. If you're thinking about taking this class do it. It's alot of work but you really do learn alot.
+[
+  {
+    "score": 0.806866,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "learn"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.799859,
+    "label": "/education/teaching and classroom resources",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "resources"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.742437,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "learn"
+        }
+      ]
+    }
+  }
+]
+Honestly, I do not think I've ever learned more in a singular class in my life. Professor Short expects a great deal from his students but, so long as you put in the effort it will show in your grades.
+[
+  {
+    "score": 0.878695,
+    "label": "/education/special education",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "grades"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.814426,
+    "label": "/education/school",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "students"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.802692,
+    "label": "/education/high school",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "grades"
+        }
+      ]
+    }
+  }
+]
+The lectures were extremely informative. I only wished I started reading through all of them way before the final exam. It would've been cool to test out some of the instructions in lab.
+[
+  {
+    "score": 0.812204,
+    "label": "/technology and computing/hardware/computer components/chips and processors",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "instructions"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.702185,
+    "label": "/sports/cricket",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "test"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.69958,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "reading"
+        }
+      ]
+    }
+  }
+]
+I think the explanations of the more complex labs alongside the regular lectures really helped to give me an understanding of some of the labs that I had trouble with.
+[
+  {
+    "score": 0.749003,
+    "label": "/science",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "explanations"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.664487,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "understanding"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.601382,
+    "label": "/science/biology",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "explanations"
+        }
+      ]
+    }
+  }
+]
+I found it really valuable to learn about microcontrollers and assembly language. Using Atmel Studio was interesting.
+[
+  {
+    "score": 0.899799,
+    "label": "/technology and computing/hardware/computer components/chips and processors",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "microcontrollers"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.89885,
+    "label": "/technology and computing/hardware/computer peripherals",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "microcontrollers"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.764499,
+    "label": "/education/english as a second language",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "language"
+        }
+      ]
+    }
+  }
+]
+This class is fantastic. I'm EE, but I still really enjoyed learning about embedded systems and learning assembly.
+[
+  {
+    "score": 0.808135,
+    "label": "/technology and computing/operating systems",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "embedded systems"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.787757,
+    "label": "/education/language learning",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "learning"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.779095,
+    "label": "/education/teaching and classroom resources",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "learning"
+        }
+      ]
+    }
+  }
+]
+This course beats you over the head with work but you learn a great deal about embedded systems at the end.
+[
+  {
+    "score": 0.891473,
+    "label": "/technology and computing/operating systems",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "embedded systems"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.780114,
+    "label": "/technology and computing/hardware/computer components/chips and processors",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "embedded systems"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.717077,
+    "label": "/technology and computing/hardware/computer peripherals",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "embedded systems"
+        }
+      ]
+    }
+  }
+]
+This course made understand microprocessors deeper and made me learn to use assembly code efficiently.
+[
+  {
+    "score": 0.976276,
+    "label": "/technology and computing/hardware/computer components/chips and processors",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "microprocessors"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.829811,
+    "label": "/technology and computing/hardware/computer",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "microprocessors"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.828094,
+    "label": "/technology and computing/operating systems",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "code"
+        }
+      ]
+    }
+  }
+]
+The professor, one of the few that can clearly teach the difficult material in this major
+[
+  {
+    "score": 0.702006,
+    "label": "/education",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "teach"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.678365,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "teach"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.672994,
+    "label": "/education/teaching and classroom resources",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "teach"
+        }
+      ]
+    }
+  }
+]
+The comprehensive lab course which occurs in parallel with the actual lectures
+[
+  {
+    "score": 0.693583,
+    "label": "/science",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "lectures"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.580904,
+    "label": "/education",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "comprehensive"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.580133,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "course"
+        }
+      ]
+    }
+  }
+]
+Ken Short is the GOAT. Lectures on timer/counters and SPI were most valuable.
+[
+  {
+    "score": 0.708774,
+    "label": "/technology and computing/hardware/computer peripherals",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "spi"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.571851,
+    "label": "/hobbies and interests/games",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "timer"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.564748,
+    "label": "/hobbies and interests/games/board games and puzzles",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "counters"
+        }
+      ]
+    }
+  }
+]
+laboratories, while a lot of work, were very good to illustrate the material
+[
+  {
+    "score": 0.61213,
+    "label": "/science",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "laboratories"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.607781,
+    "label": "/science/engineering",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "laboratories"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.54845,
+    "label": "/science/biology/biotechnology",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "laboratories"
+        }
+      ]
+    }
+  }
+]
+Learning about embedded microprocessor systems designs.
+[
+  {
+    "score": 0.964786,
+    "label": "/technology and computing/hardware/computer components/chips and processors",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "microprocessor"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.935454,
+    "label": "/technology and computing/hardware/computer peripherals",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "microprocessor"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.928803,
+    "label": "/technology and computing/hardware/computer",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "microprocessor"
+        }
+      ]
+    }
+  }
+]
+The hands on experience.
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
+[
+  {
+    "score": 0.725148,
+    "label": "/health and fitness/disorders/mental disorder/panic and anxiety",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.660517,
+    "label": "/education/homework and study tips",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  },
+  {
+    "score": 0.648961,
+    "label": "/family and parenting/children",
+    "explanation": {
+      "relevant_text": [
+        {
+          "text": "experience"
+        }
+      ]
+    }
+  }
+]
