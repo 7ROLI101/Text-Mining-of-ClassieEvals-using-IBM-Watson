@@ -1,0 +1,168 @@
+ESE380 is a very valuable introduction and dive into the use and operation of microcontrollers. Prior to this class I knew little to nothing about what's going inside of a microcontroller. Professor Short paces the material nicely, from complete beginner (configuring port registers and assembly language syntax) to more advance features (like interrupts and timers).
+
+Now that I've completed the course, I feel confident in my abilities to apply microcontrollers in personal projects. My coding skills have gained too, knowing what is happening at such a low level in a computer puts a different twist on how one view's a program.
+[
+  {
+    "text": "Assembly language",
+    "relevance": 0.968142,
+    "dbpedia_resource": "http://dbpedia.org/resource/Assembly_language"
+  },
+  {
+    "text": "Microcontroller",
+    "relevance": 0.761866,
+    "dbpedia_resource": "http://dbpedia.org/resource/Microcontroller"
+  }
+]
+This course, while definitely a lot of work, was a rewarding experience.  Professor Short's lectures are organized and well-taught.  The material is challenging, but if you attend lecture and work on the lab each week (don't alternate which lab partner writes the code and especially never have one partner do all the labs) you should be able to understand most of it pretty well.  There is a lot to be learned in this class.
+[
+  {
+    "text": "Knowledge",
+    "relevance": 0.913762,
+    "dbpedia_resource": "http://dbpedia.org/resource/Knowledge"
+  }
+]
+The hands-on opportunities with a microcontroller is valuable and the concepts covered in class elucidating embedded systems designs with practice with assembly language is beneficial as assembly language is a low-level language; however, it is necessary when working with embedded systems which is everywhere in this contemporary and technologically-advanced society.
+[
+  {
+    "text": "Microcontroller",
+    "relevance": 0.967599,
+    "dbpedia_resource": "http://dbpedia.org/resource/Microcontroller"
+  },
+  {
+    "text": "Linux",
+    "relevance": 0.79116,
+    "dbpedia_resource": "http://dbpedia.org/resource/Linux"
+  }
+]
+The class is mainly on assembly language which is helpful to learn. Professor short made tutorials outside of class in order to ensure everyone understood how to program the micro-controllers which was extremely helpful, since he did it when he didn't have to. He always posts his material days before class so you know what is going on that day
+[
+  {
+    "text": "Compiler",
+    "relevance": 0.926667,
+    "dbpedia_resource": "http://dbpedia.org/resource/Compiler"
+  },
+  {
+    "text": "Subroutine",
+    "relevance": 0.876381,
+    "dbpedia_resource": "http://dbpedia.org/resource/Subroutine"
+  }
+]
+I have now learned many skills that provide me with a basis of understanding of embedded system design. I feel confidant that I will be able to dream up devices and implement them now that I know how to program a microcontroller, use assembly language, and understand the basics of computer architecture.
+[
+  {
+    "text": "Microprocessor",
+    "relevance": 0.945414,
+    "dbpedia_resource": "http://dbpedia.org/resource/Microprocessor"
+  },
+  {
+    "text": "Assembly language",
+    "relevance": 0.914252,
+    "dbpedia_resource": "http://dbpedia.org/resource/Assembly_language"
+  }
+]
+Amazing class Professor Short is one of the best professors I've had. He teaches the material extremely well and has valuable resources to help you learn the material. If you're thinking about taking this class do it. It's alot of work but you really do learn alot.
+[
+  {
+    "text": "Professor",
+    "relevance": 0.91136,
+    "dbpedia_resource": "http://dbpedia.org/resource/Professor"
+  },
+  {
+    "text": "Amazing",
+    "relevance": 0.8704,
+    "dbpedia_resource": "http://dbpedia.org/resource/Amazing_(Seal_song)"
+  }
+]
+Honestly, I do not think I've ever learned more in a singular class in my life. Professor Short expects a great deal from his students but, so long as you put in the effort it will show in your grades.
+[
+  {
+    "text": "English-language films",
+    "relevance": 0.914942,
+    "dbpedia_resource": "http://dbpedia.org/resource/English-language_films"
+  }
+]
+The lectures were extremely informative. I only wished I started reading through all of them way before the final exam. It would've been cool to test out some of the instructions in lab.
+[
+  {
+    "text": "Educational psychology",
+    "relevance": 0.916815,
+    "dbpedia_resource": "http://dbpedia.org/resource/Educational_psychology"
+  }
+]
+I think the explanations of the more complex labs alongside the regular lectures really helped to give me an understanding of some of the labs that I had trouble with.
+[
+  {
+    "text": "Complex number",
+    "relevance": 0.863894,
+    "dbpedia_resource": "http://dbpedia.org/resource/Complex_number"
+  },
+  {
+    "text": "Regular representation",
+    "relevance": 0.856438,
+    "dbpedia_resource": "http://dbpedia.org/resource/Regular_representation"
+  }
+]
+I found it really valuable to learn about microcontrollers and assembly language. Using Atmel Studio was interesting.
+[
+  {
+    "text": "Microcontroller",
+    "relevance": 0.948944,
+    "dbpedia_resource": "http://dbpedia.org/resource/Microcontroller"
+  },
+  {
+    "text": "Assembly language",
+    "relevance": 0.75971,
+    "dbpedia_resource": "http://dbpedia.org/resource/Assembly_language"
+  }
+]
+This class is fantastic. I'm EE, but I still really enjoyed learning about embedded systems and learning assembly.
+[
+  {
+    "text": "Linux",
+    "relevance": 0.909,
+    "dbpedia_resource": "http://dbpedia.org/resource/Linux"
+  },
+  {
+    "text": "Microcontroller",
+    "relevance": 0.901,
+    "dbpedia_resource": "http://dbpedia.org/resource/Microcontroller"
+  }
+]
+This course beats you over the head with work but you learn a great deal about embedded systems at the end.
+[
+  {
+    "text": "Embedded system",
+    "relevance": 0.91136,
+    "dbpedia_resource": "http://dbpedia.org/resource/Embedded_system"
+  }
+]
+This course made understand microprocessors deeper and made me learn to use assembly code efficiently.
+[
+  {
+    "text": "Assembly language",
+    "relevance": 0.927302,
+    "dbpedia_resource": "http://dbpedia.org/resource/Assembly_language"
+  },
+  {
+    "text": "Compiler",
+    "relevance": 0.900507,
+    "dbpedia_resource": "http://dbpedia.org/resource/Compiler"
+  }
+]
+The professor, one of the few that can clearly teach the difficult material in this major
+[
+  {
+    "text": "Charlotte Bront\u00eb",
+    "relevance": 0.844603,
+    "dbpedia_resource": "http://dbpedia.org/resource/Charlotte_Bront\u00eb"
+  }
+]
+The comprehensive lab course which occurs in parallel with the actual lectures
+[
+  {
+    "text": "Academia",
+    "relevance": 0.849861,
+    "dbpedia_resource": "http://dbpedia.org/resource/Academia"
+  }
+]
+Ken Short is the GOAT. Lectures on timer/counters and SPI were most valuable.
