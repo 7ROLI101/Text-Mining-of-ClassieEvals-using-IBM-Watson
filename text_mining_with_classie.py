@@ -4,6 +4,8 @@ from ibm_watson.natural_language_understanding_v1 import Features, KeywordsOptio
 import scrape_parse
 import json
 
+# these functions will be needed for the keywords frequency graph
+
 
 def sorting_on_count(a):
     return a['count']
@@ -23,6 +25,14 @@ NLU.set_service_url(
     'https://api.us-south.natural-language-understanding.watson.cloud.ibm.com/instances/2acea4e4-9e41-400b-b6a1'
     '-a27c3c7c608c')
 
+# variables used
+valuable = []
+needs_improvement = []
+valuable_keywords = []
+needs_improvement_keywords = []
+add = []
+sentiment_score = 0
+
 # this is where we edit the code to introduce what we need
 scrape_parse.input_user_info()
 classie = scrape_parse.inputClass()
@@ -33,15 +43,21 @@ class_time = str(classie.get_class_season()).upper() + str(classie.get_class_yea
 valuable = classie.get_positive_comments()
 needs_improvement = classie.get_negative_comments()
 
-valuable_keywords = []
-
 for i in valuable:
     print(i)
     print('\n')
+    if len(i) == 1:
+        continue
+    sentiment_valuable_response = NLU.analyze(
+        text=i,
+        features=Features(sentiment=SentimentOptions()),
+        language="en").get_result()
+    print(json.dumps(sentiment_valuable_response['sentiment']['document']["score"], indent=1))
+    add.append(sentiment_valuable_response['sentiment']['document']["score"])
     valuable_keywords_response = NLU.analyze(
         text=i,
-        features=Features(
-            keywords=KeywordsOptions(limit=20, sentiment=True)), language='en').get_result()
+        features=Features(keywords=KeywordsOptions(limit=20, sentiment=True)),
+        language='en').get_result()
     print(json.dumps(valuable_keywords_response['keywords'], indent=2))
     for entry in valuable_keywords_response['keywords']:
         valuable_keywords.append({'keyword': entry['text'],
@@ -49,7 +65,32 @@ for i in valuable:
                                   'count': entry['count']})
     print("\n")
 
-print(json.dumps(valuable_keywords, indent=2))
+for i in needs_improvement:
+    print(i)
+    print('\n')
+    if len(i.split()) == 1:
+        continue
+    sentiment_needs_improvement_response = NLU.analyze(
+        text=i,
+        features=Features(sentiment=SentimentOptions()),
+        language="en").get_result()
+    print(json.dumps(sentiment_needs_improvement_response['sentiment']['document']["score"], indent=1))
+    add.append(sentiment_needs_improvement_response['sentiment']['document']["score"])
+    needs_improvement_keywords_response = NLU.analyze(
+        text=i,
+        features=Features(keywords=KeywordsOptions(limit=20, sentiment=True)),
+        language='en').get_result()
+    print(json.dumps(needs_improvement_keywords_response['keywords'], indent=2))
+    for entry in needs_improvement_keywords_response['keywords']:
+        needs_improvement_keywords.append({'keyword': entry['text'],
+                                           'sentiment': entry['sentiment']['score'],
+                                           'count': entry['count']})
+    print("\n")
+
+for element in add:
+    sentiment_score = sentiment_score + element
+sentiment_score = sentiment_score / len(add)
+print("sentiment average = ", sentiment_score)
 
 # section to check to see if there are multiple entries of the same text in the list
 temp = []
