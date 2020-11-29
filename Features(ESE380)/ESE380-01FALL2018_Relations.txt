@@ -1,0 +1,457 @@
+ESE380 is a very valuable introduction and dive into the use and operation of microcontrollers. Prior to this class I knew little to nothing about what's going inside of a microcontroller. Professor Short paces the material nicely, from complete beginner (configuring port registers and assembly language syntax) to more advance features (like interrupts and timers).
+
+Now that I've completed the course, I feel confident in my abilities to apply microcontrollers in personal projects. My coding skills have gained too, knowing what is happening at such a low level in a computer puts a different twist on how one view's a program.
+[]
+
+This course, while definitely a lot of work, was a rewarding experience.  Professor Short's lectures are organized and well-taught.  The material is challenging, but if you attend lecture and work on the lab each week (don't alternate which lab partner writes the code and especially never have one partner do all the labs) you should be able to understand most of it pretty well.  There is a lot to be learned in this class.
+[
+  {
+    "type": "managerOf",
+    "sentence": "Professor Short's lectures are organized and well-taught.",
+    "score": 0.299906,
+    "arguments": [
+      {
+        "text": "Short",
+        "location": [
+          84,
+          89
+        ],
+        "entities": [
+          {
+            "type": "Person",
+            "text": "Short"
+          }
+        ]
+      },
+      {
+        "text": "lectures",
+        "location": [
+          92,
+          100
+        ],
+        "entities": [
+          {
+            "type": "Person",
+            "text": "lectures"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "agentOf",
+    "sentence": "The material is challenging, but if you attend lecture and work on the lab each week (don't alternate which lab partner writes the code and especially never have one partner do all the labs) you should be able to understand most of it pretty well.",
+    "score": 0.969294,
+    "arguments": [
+      {
+        "text": "lab partner",
+        "location": [
+          241,
+          252
+        ],
+        "entities": [
+          {
+            "type": "Organization",
+            "text": "lab partner"
+          }
+        ]
+      },
+      {
+        "text": "writes",
+        "location": [
+          253,
+          259
+        ],
+        "entities": [
+          {
+            "type": "EventCommunication",
+            "text": "writes"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "locatedAt",
+    "sentence": "The material is challenging, but if you attend lecture and work on the lab each week (don't alternate which lab partner writes the code and especially never have one partner do all the labs) you should be able to understand most of it pretty well.",
+    "score": 0.523618,
+    "arguments": [
+      {
+        "text": "partner",
+        "location": [
+          299,
+          306
+        ],
+        "entities": [
+          {
+            "type": "Person",
+            "text": "partner"
+          }
+        ]
+      },
+      {
+        "text": "labs",
+        "location": [
+          318,
+          322
+        ],
+        "entities": [
+          {
+            "type": "Facility",
+            "text": "labs"
+          }
+        ]
+      }
+    ]
+  }
+]
+
+The hands-on opportunities with a microcontroller is valuable and the concepts covered in class elucidating embedded systems designs with practice with assembly language is beneficial as assembly language is a low-level language; however, it is necessary when working with embedded systems which is everywhere in this contemporary and technologically-advanced society.
+[]
+
+The class is mainly on assembly language which is helpful to learn. Professor short made tutorials outside of class in order to ensure everyone understood how to program the micro-controllers which was extremely helpful, since he did it when he didn't have to. He always posts his material days before class so you know what is going on that day
+[]
+
+I have now learned many skills that provide me with a basis of understanding of embedded system design. I feel confidant that I will be able to dream up devices and implement them now that I know how to program a microcontroller, use assembly language, and understand the basics of computer architecture.
+[]
+
+Amazing class Professor Short is one of the best professors I've had. He teaches the material extremely well and has valuable resources to help you learn the material. If you're thinking about taking this class do it. It's alot of work but you really do learn alot.
+[
+  {
+    "type": "partOfMany",
+    "sentence": "Amazing class Professor Short is one of the best professors I've had.",
+    "score": 0.291196,
+    "arguments": [
+      {
+        "text": "Short",
+        "location": [
+          24,
+          29
+        ],
+        "entities": [
+          {
+            "type": "Person",
+            "text": "Short"
+          }
+        ]
+      },
+      {
+        "text": "professors",
+        "location": [
+          49,
+          59
+        ],
+        "entities": [
+          {
+            "type": "Person",
+            "text": "professors"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "partOfMany",
+    "sentence": "Amazing class Professor Short is one of the best professors I've had.",
+    "score": 0.844299,
+    "arguments": [
+      {
+        "text": "one",
+        "location": [
+          33,
+          36
+        ],
+        "entities": [
+          {
+            "type": "Cardinal",
+            "text": "one"
+          }
+        ]
+      },
+      {
+        "text": "professors",
+        "location": [
+          49,
+          59
+        ],
+        "entities": [
+          {
+            "type": "Person",
+            "text": "professors"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "agentOf",
+    "sentence": "He teaches the material extremely well and has valuable resources to help you learn the material.",
+    "score": 0.989244,
+    "arguments": [
+      {
+        "text": "He",
+        "location": [
+          70,
+          72
+        ],
+        "entities": [
+          {
+            "type": "Person",
+            "text": "Short"
+          }
+        ]
+      },
+      {
+        "text": "teaches",
+        "location": [
+          73,
+          80
+        ],
+        "entities": [
+          {
+            "type": "EventCommunication",
+            "text": "teaches"
+          }
+        ]
+      }
+    ]
+  }
+]
+
+Honestly, I do not think I've ever learned more in a singular class in my life. Professor Short expects a great deal from his students but, so long as you put in the effort it will show in your grades.
+[]
+
+The lectures were extremely informative. I only wished I started reading through all of them way before the final exam. It would've been cool to test out some of the instructions in lab.
+[]
+
+I think the explanations of the more complex labs alongside the regular lectures really helped to give me an understanding of some of the labs that I had trouble with.
+[]
+
+I found it really valuable to learn about microcontrollers and assembly language. Using Atmel Studio was interesting.
+[]
+
+This class is fantastic. I'm EE, but I still really enjoyed learning about embedded systems and learning assembly.
+[]
+
+This course beats you over the head with work but you learn a great deal about embedded systems at the end.
+[]
+
+This course made understand microprocessors deeper and made me learn to use assembly code efficiently.
+[]
+
+The professor, one of the few that can clearly teach the difficult material in this major
+[]
+
+The comprehensive lab course which occurs in parallel with the actual lectures
+[]
+
+Ken Short is the GOAT. Lectures on timer/counters and SPI were most valuable.
+[]
+
+laboratories, while a lot of work, were very good to illustrate the material
+[]
+
+Learning about embedded microprocessor systems designs.
+[]
+
+The hands on experience.
+[]
+
+
+The only thing wrong with this class is the grading.  The grading is inconsistent across the different TAs and is designed to make students get less points than they deserve, and the regrade policy is designed to make students accept unfair grades because getting them corrected is too much work and could result in losing even more points.  Points were taken off for no good reason (or no apparent reason at all), or for not doing something that the question didn't ask for, and it was difficult to confront them about the grading because they didn't all have office hours.  The TAs who graded a particular exam should be required to hold dedicated office hours after that exam has been graded and returned to students so that grading issues can be discussed at a convenient time.  Sometimes the questions at the end of the labs are ambiguous and the TAs don't help you understand what it is asking, which leads to not getting any credit for your work.  More frustratingly, some questions have more than one correct answer but if your answer didn't happen to be the one on their 'solutions' you don't get any points for it even though it was also a correct response.  The grading requirements for the theory sections are not revealed until after they have been submitted so that you don't know what they were looking for until it's too late to correct it.  A demanding course is one thing but that shouldn't mean that students are graded unfairly for their hard work.
+[]
+
+This class has very clearly defined policies, such as the grading policies and the expectations for assignments. However, the notorious theory section of the labs, and the labs in general, wouldn't have their grading rubrics available until after the lab was graded, so it often felt like the grading of labs could be rather arbitrary for the 'subjective' portions of gradings of the lab. In addition, if a valid answer is given, but it isn't an answer the solution manual gives for a lab or exam, you'd have to be able to move Mount Everest before some of the grading TAs would be willing to acknowledge their mistakes.
+[]
+
+The Lab should definitely have at least 3 members per group as it is too much work for 1 single person if the other lab partner doesn't try. Many of my other courses were sacrificed to finish the labs. Not enough example of Assembly language code provided to the point the professor had to do assembly language tutorial classes to get everyone caught up. More example codes in class or in the lab files would be nice. Many students are lost and are not offered any kind of help with code until it is too late in the semester
+[
+  {
+    "type": "memberOf",
+    "sentence": "The Lab should definitely have at least 3 members per group as it is too much work for 1 single person if the other lab partner doesn't try.",
+    "score": 0.334332,
+    "arguments": [
+      {
+        "text": "members",
+        "location": [
+          42,
+          49
+        ],
+        "entities": [
+          {
+            "type": "Person",
+            "text": "members"
+          }
+        ]
+      },
+      {
+        "text": "group",
+        "location": [
+          54,
+          59
+        ],
+        "entities": [
+          {
+            "type": "Organization",
+            "text": "Lab"
+          }
+        ]
+      }
+    ]
+  }
+]
+
+Professor Short, while very thorough, was a little too slow for me at times. As a sleep-deprived student, his slow-going deep voice sometimes made it tough for me to stay awake. One other frustrating point: the lab lecture was often given after my lab section's prelab was due or sometimes even after my lab section altogether. It'd be nice if there was a way to ensure the lab lecture was always given prior to the prelab due date for every lab section.
+[
+  {
+    "type": "employedBy",
+    "sentence": "One other frustrating point: the lab lecture was often given after my lab section's prelab was due or sometimes even after my lab section altogether.",
+    "score": 0.475549,
+    "arguments": [
+      {
+        "text": "my",
+        "location": [
+          245,
+          247
+        ],
+        "entities": [
+          {
+            "type": "Person",
+            "text": "Short"
+          }
+        ]
+      },
+      {
+        "text": "lab",
+        "location": [
+          248,
+          251
+        ],
+        "entities": [
+          {
+            "type": "Organization",
+            "text": "lab lecture",
+            "disambiguation": {
+              "subtype": [
+                "Commercial"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "employedBy",
+    "sentence": "One other frustrating point: the lab lecture was often given after my lab section's prelab was due or sometimes even after my lab section altogether.",
+    "score": 0.379633,
+    "arguments": [
+      {
+        "text": "my",
+        "location": [
+          301,
+          303
+        ],
+        "entities": [
+          {
+            "type": "Person",
+            "text": "Short"
+          }
+        ]
+      },
+      {
+        "text": "lab",
+        "location": [
+          304,
+          307
+        ],
+        "entities": [
+          {
+            "type": "Organization",
+            "text": "lab lecture",
+            "disambiguation": {
+              "subtype": [
+                "Commercial"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
+
+less writeups for labs? I would have preferred to concentrate on the hardware/software aspect. In one lab in particular, there were 6 tasks (programs) we did not get past task three, as it was very complicated and i was very disappointed,as i wanted to do all 6. a time extension would have been good - it was lab 4, i think.
+[]
+
+It would've been nice if the handwritten notes he did in lecture would be posted. I would miss information sometimes writing one thing down while he moved onto the next. I would've much rather just sit and pay attention and then go home, review the notes and be like 'oh, i remember that.'
+[]
+
+The course could be improved if there was more practice on assembly language coding problems and if the textbook gave more examples on the coding as assembly language feels unconventional to many people who work with object-oriented programming.
+[]
+
+Course moves kind of fast, could spend more time doing actual examples of code and hardware instead of just theory. Extremely strict deadlines with no leeway, material is very difficult. Cannot afford to miss any days of class
+[]
+
+Increase the pace of the class, table look-up can be a 15 minute lesson, as could the button the debouncing, LED circuits, pull-up resistors, etc... Speed these up then add ADC's after SPI.
+[]
+
+The last few weeks of the course accelerate rapidly and cover some very dense material. Better pacing at the beginning of the semester to prevent cramming at the end would be appreciated.
+[]
+
+The labs towards the end are a little harder, but doable. Other than that, the class was great.
+[]
+
+Better practice exams so we can be properly prepared for the questions he asks on the tests
+[
+  {
+    "type": "agentOf",
+    "sentence": "Better practice exams so we can be properly prepared for the questions he asks on the tests",
+    "score": 0.9759,
+    "arguments": [
+      {
+        "text": "he",
+        "location": [
+          71,
+          73
+        ],
+        "entities": [
+          {
+            "type": "Person",
+            "text": "he"
+          }
+        ]
+      },
+      {
+        "text": "asks",
+        "location": [
+          74,
+          78
+        ],
+        "entities": [
+          {
+            "type": "EventCommunication",
+            "text": "asks"
+          }
+        ]
+      }
+    ]
+  }
+]
+
+Have the lab lecture be more detailed and before the lab sections occur.
+[]
+
+I think some more time explaining stacks and timers would be helpful.
+[]
+
+The last SPI unit was a little rushed, but things happen.
+[]
+
+bigger room for review sessions.
+[]
+
+Discuss things slower in class
+[]
+
+none
