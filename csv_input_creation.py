@@ -8,7 +8,7 @@ while True:
     surveyClass.set_class_info()
     class_name = surveyClass.get_class_code()
     class_time = str(surveyClass.get_class_season()).upper() + str(surveyClass.get_class_year())
-    with open(str(class_name.upper()) + class_time + '.csv', mode='w', newline='') as file:
+    with open(str(class_name.upper()) + class_time + '.csv', mode='w', newline='',encoding='utf-8') as file:
         csvwriter = csv.writer(file, delimiter=',', quoting=csv.QUOTE_ALL)
         positives = ['Valuable']
         negatives = ['Needs Improvement']
