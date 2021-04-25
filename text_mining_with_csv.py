@@ -26,6 +26,8 @@ NLU.set_service_url(
 
 input_files = []
 classes_listed = []
+illegal_types = ["Major", "AcademicStanding", "Quantity"]
+illegal_subtypes = ["Freshman", "Sophomore", "Junior", "Senior", "Student", "Faculty"]
 
 # used to get input files for later on
 with os.scandir('./Sample_Class_CSV_Files') as it:
@@ -47,89 +49,47 @@ while input_files:
     sentiment_score = 0
     entities_valuables = []
     entities_needs_improvement = []
-    entities_valuables_scores = {
+    # store the entity scores and counts in a list -> first value is sentiment, second value is count
+    entities_scores = {
         'Course':
             {
-                'None': [0, 0], 'Material': [0, 0], 'Pacing': [0, 0], 'Difficulty': [0, 0], 'Resources': [0, 0],
+                'NONE': [0, 0], 'Material': [0, 0], 'Pacing': [0, 0], 'Difficulty': [0, 0], 'Resources': [0, 0],
                 'Timing': [0, 0], 'Grading': [0, 0], 'Location': [0, 0], 'TeachingStyle': [0, 0], 'Workload': [0, 0]
             },
         'Lecture':
             {
-                'None': [0, 0], 'Material': [0, 0], 'Pacing': [0, 0], 'Timing': [0, 0],
+                'NONE': [0, 0], 'Material': [0, 0], 'Pacing': [0, 0], 'Timing': [0, 0],
                 'Difficulty': [0, 0], 'Location': [0, 0], 'TeachingStyle': [0, 0], 'Resources': [0, 0]
             },
         'Recitation':
             {
-                'None': [0, 0], 'Material': [0, 0], 'Pacing': [0, 0], 'Timing': [0, 0], 'Difficulty': [0, 0],
+                'NONE': [0, 0], 'Material': [0, 0], 'Pacing': [0, 0], 'Timing': [0, 0], 'Difficulty': [0, 0],
                 'Resources': [0, 0], 'Grading': [0, 0], 'Location': [0, 0], 'TeachingStyle': [0, 0], 'Workload': [0, 0]
             },
         'Exams':
             {
-                'None': [0, 0], 'Material': [0, 0], 'Pacing': [0, 0], 'Timing': [0, 0], 'Workload': [0, 0], 'Grading': [0, 0],
+                'NONE': [0, 0], 'Material': [0, 0], 'Pacing': [0, 0], 'Timing': [0, 0], 'Workload': [0, 0],
+                'Grading': [0, 0],
                 'Difficulty': [0, 0], 'Location': [0, 0], 'TeachingStyle': [0, 0], 'Resources': [0, 0]
             },
         'Lab':
             {
-                'None': [0, 0], 'Material': [0, 0], 'Pacing': [0, 0], 'Difficulty': [0, 0], 'Resources': [0, 0],
+                'NONE': [0, 0], 'Material': [0, 0], 'Pacing': [0, 0], 'Difficulty': [0, 0], 'Resources': [0, 0],
                 'Timing': [0, 0], 'Grading': [0, 0], 'Location': [0, 0], 'TeachingStyle': [0, 0], 'Workload': [0, 0]
             },
         'Projects':
             {
-                'None': [0, 0], 'Material': [0, 0], 'Pacing': [0, 0], 'Difficulty': [0, 0],
+                'NONE': [0, 0], 'Material': [0, 0], 'Pacing': [0, 0], 'Difficulty': [0, 0],
                 'Resources': [0, 0], 'Timing': [0, 0], 'Grading': [0, 0], 'Workload': [0, 0]
             },
         'Homework':
             {
-                'None': [0, 0], 'Material': [0, 0], 'Difficulty': [0, 0], 'Workload': [0, 0],
+                'NONE': [0, 0], 'Material': [0, 0], 'Difficulty': [0, 0], 'Workload': [0, 0],
                 'Resources': [0, 0], 'Timing': [0, 0], 'Grading': [0, 0]
             },
         'Contact':
             {
-                'None': [0, 0], 'Resources': [0, 0], 'Difficulty': [0, 0],
-                'Timing': [0, 0], 'TeachingStyle': [0, 0], 'Location': [0, 0]
-            },
-        'Person':
-            {'Professor': [0, 0], 'TeachingAssistant': [0, 0]}
-    }
-    entities_needs_improvement_scores = {
-        'Course':
-            {
-                'None': [0, 0], 'Material': [0, 0], 'Pacing': [0, 0], 'Difficulty': [0, 0], 'Resources': [0, 0],
-                'Timing': [0, 0], 'Grading': [0, 0], 'Location': [0, 0], 'TeachingStyle': [0, 0], 'Workload': [0, 0]
-            },
-        'Lecture':
-            {
-                'None': [0, 0], 'Material': [0, 0], 'Pacing': [0, 0], 'Timing': [0, 0],
-                'Difficulty': [0, 0], 'Location': [0, 0], 'TeachingStyle': [0, 0], 'Resources': [0, 0]
-            },
-        'Recitation':
-            {
-                'None': [0, 0], 'Material': [0, 0], 'Pacing': [0, 0], 'Timing': [0, 0], 'Difficulty': [0, 0],
-                'Resources': [0, 0], 'Grading': [0, 0], 'Location': [0, 0], 'TeachingStyle': [0, 0], 'Workload': [0, 0]
-            },
-        'Exams':
-            {
-                'None': [0, 0], 'Material': [0, 0], 'Pacing': [0, 0], 'Timing': [0, 0], 'Workload': [0, 0], 'Grading': [0, 0],
-                'Difficulty': [0, 0], 'Location': [0, 0], 'TeachingStyle': [0, 0], 'Resources': [0, 0]
-            },
-        'Lab':
-            {
-                'None': [0, 0], 'Material': [0, 0], 'Pacing': [0, 0], 'Difficulty': [0, 0], 'Resources': [0, 0],
-                'Timing': [0, 0], 'Grading': [0, 0], 'Location': [0, 0], 'TeachingStyle': [0, 0], 'Workload': [0, 0]
-            },
-        'Projects':
-            {
-                'None': [0, 0], 'Material': [0, 0], 'Pacing': [0, 0], 'Difficulty': [0, 0],
-                'Resources': [0, 0], 'Timing': [0, 0], 'Grading': [0, 0], 'Workload': [0, 0]
-            },
-        'Homework':
-            {
-                'None': [0, 0], 'Material': [0, 0], 'Difficulty': [0, 0], 'Workload': [0, 0],
-                'Resources': [0, 0], 'Timing': [0, 0], 'Grading': [0, 0]
-            },
-        'Contact':
-            {
-                'None': [0, 0], 'Resources': [0, 0], 'Difficulty': [0, 0],
+                'NONE': [0, 0], 'Resources': [0, 0], 'Difficulty': [0, 0],
                 'Timing': [0, 0], 'TeachingStyle': [0, 0], 'Location': [0, 0]
             },
         'Person':
@@ -147,7 +107,6 @@ while input_files:
     # end reading and grabbing of information from the file
 
     # start the parsing of the information from the file
-
     # looking through all of the valuable comments of the course
     for i in valuable:
         print(i)
@@ -173,17 +132,18 @@ while input_files:
             valuable_keywords.append({'keyword': entry['text'],
                                       'sentiment': entry['sentiment']['score'],
                                       'count': entry['count']})
+        print("\n")
         # look for the entities in the valuable section of the input
         valuable_entities_response = NLU.analyze(
             text=i,
-            features=Features(entities=EntitiesOptions(sentiment=True, model='644c43e1-f089-414c-bb2c-a1bcc1c130e5'))
-        ).get_result()
+            features=Features(entities=EntitiesOptions(sentiment=True, model='644c43e1-f089-414c-bb2c-a1bcc1c130e5')),
+        language='en').get_result()
         print(json.dumps(valuable_entities_response['entities'], indent=2))
         # now store the entities from the valuable section into the entities_valuable data structure
         for entry in valuable_entities_response['entities']:
             entities_valuables.append({'name': entry['text'],
                                        'type': entry['type'],
-                                       'subtype': entry['disambiguation']['subtype'],
+                                       'subtype': entry['disambiguation']['subtype'][0],
                                        'count': entry['count'],
                                        'sentiment': entry['sentiment']['score']})
         print("\n")
@@ -211,6 +171,19 @@ while input_files:
             needs_improvement_keywords.append({'keyword': entry['text'],
                                                'sentiment': entry['sentiment']['score'],
                                                'count': entry['count']})
+        # look for the entities in the needs improvement section of the input
+        needs_improvement_entities_response = NLU.analyze(
+            text=i,
+            features=Features(entities=EntitiesOptions(sentiment=True, model='644c43e1-f089-414c-bb2c-a1bcc1c130e5')),
+        language='en').get_result()
+        print(json.dumps(needs_improvement_entities_response['entities'], indent=2))
+        # now store the entities from the valuable section into the entities_valuable data structure
+        for entry in needs_improvement_entities_response['entities']:
+            entities_needs_improvement.append({'name': entry['text'],
+                                               'type': entry['type'],
+                                               'subtype': entry['disambiguation']['subtype'][0],
+                                               'count': entry['count'],
+                                               'sentiment': entry['sentiment']['score']})
         print("\n")
 
     for element in add:
@@ -321,14 +294,40 @@ while input_files:
     # needs_improvement_keywords is final list
 
     # now it's time to store the needed information for the entities
+    # first look into what the valuable entities list has and use that information
+    for entry in entities_valuables:
+        entity_type = entry['type']
+        entity_subtype = entry['subtype']
+        if entity_type == 'Person' and entity_subtype == 'NONE':
+            continue
+        if (entity_type not in illegal_types) and (entity_subtype not in illegal_subtypes):
+            # update the sentiment scores for the entity types and subtypes
+            entities_scores[entity_type][entity_subtype][0] = entities_scores[entity_type][entity_subtype][0] + entry[
+                'sentiment'] * entry['count']
+            # update the count for the entity types and subtypes
+            entities_scores[entity_type][entity_subtype][1] = entities_scores[entity_type][entity_subtype][1] + entry[
+                'count']
+    # now look into what the needs improvement entities list has and use that information
+    for entry in entities_needs_improvement:
+        entity_type = entry['type']
+        entity_subtype = entry['subtype']
+        if entity_type == 'Person' and entity_subtype == 'NONE':
+            continue
+        if (entity_type not in illegal_types) and (entity_subtype not in illegal_subtypes):
+            # update the sentiment scores for the entity types and subtypes
+            entities_scores[entity_type][entity_subtype][0] = entities_scores[entity_type][entity_subtype][0] + \
+                                                              entry['sentiment'] * entry['count']
+            # update the count for the entity types and subtypes
+            entities_scores[entity_type][entity_subtype][1] = entities_scores[entity_type][entity_subtype][1] + \
+                                                              entry['count']
 
     # now put in all of that information into the classes_listed data structure
     classes_listed.append({'name_of_class': input_files[0].split("_")[0],
                            'class_time': input_files[0].split("_")[1].split(".")[0],
                            'average_sentiment_score': sentiment_score,
                            'valuable_keywords': valuable_keywords,
-                           'needs_improvement_keywords': needs_improvement_keywords
-                           # 'entities_scores':
+                           'needs_improvement_keywords': needs_improvement_keywords,
+                           'entities_scores': entities_scores
                            })
 
     # remove the file we finished using from the input_files list
