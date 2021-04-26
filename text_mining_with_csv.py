@@ -5,7 +5,9 @@ import scrape_parse
 import csv
 import json
 import os
-
+import plotly.express as px
+from plotly.subplots import make_subplots
+import pandas as pd
 
 # these functions will be needed for the keywords frequency graph
 def sorting_on_count(a):
@@ -332,4 +334,35 @@ while input_files:
 
     # remove the file we finished using from the input_files list
     input_files.pop(0)
+
+#Outputting 
+for entry in classes_listed:
+    
+    plotly_val_keywords = [i for i in entry["valuable_keywords"] if i['sentiment'] > 0]
+    valuable_DataFrame = pd.DataFrame(list(plotly_val_keywords),columns = ['keyword','sentiment','count'])
+    print(valuable_DataFrame)
+    fig1 = px.bar(valuable_DataFrame, x = 'keyword', y = 'sentiment', hover_data=['count'],color = 'count',title = entry["name_of_class"] + " " + entry["class_time"] + " " + "Valuable Keywords")
+    #creating the graphs for plotly_needs_improvement_keywords 
+    plotly_needs_improvement_keywords = [i for i in entry["needs_improvement_keywords"] if i['sentiment'] < 0]
+    needsImprovement_DataFrame = pd.DataFrame(list(plotly_needs_improvement_keywords),columns = ['keyword','sentiment','count'])
+    print(needsImprovement_DataFrame)
+    fig2 = px.bar(needsImprovement_DataFrame, x = 'keyword', y = 'sentiment', hover_data=['count'],color = 'count',title = entry["name_of_class"] + " " + entry["class_time"] + " " + "Needs Improvement Keywords")
+    fig = make_subplots(rows=2, cols=1, shared_xaxes=False)
+    fig.add_trace(fig1['data'][0], row=1, col=1)
+    fig.add_trace(fig2['data'][0], row=2, col=1)
+    
+    # Update yaxis properties
+    fig.update_yaxes(title_text="Sentiment Score", row=1, col=1)
+    fig.update_yaxes(title_text="Sentiment Score", row=2, col=1)
+
+    # Update title and height
+    fig.update_layout(title_text="Needs Improvement and Valuable Keywords for " + entry["name_of_class"] + " " + entry["class_time"])
+    
+    fig.show()
+
+
+# df = px.data.gapminder().query("country == 'Canada'")
+# fig = px.line(classes_listed, x="year", y="lifeExp", title='Life expectancy in Canada')
+# fig.show()
 print("YOU HAVE REACHED THE END OF THE SIMULATION\n ")
+print("THE END")
