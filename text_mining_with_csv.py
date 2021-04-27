@@ -1,13 +1,13 @@
 from ibm_watson import NaturalLanguageUnderstandingV1
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 from ibm_watson.natural_language_understanding_v1 import Features, KeywordsOptions, SentimentOptions, EntitiesOptions
-import scrape_parse
 import csv
 import json
 import os
 import plotly.express as px
 from plotly.subplots import make_subplots
 import pandas as pd
+
 
 # these functions will be needed for the keywords frequency graph
 def sorting_on_count(a):
@@ -139,7 +139,7 @@ while input_files:
         valuable_entities_response = NLU.analyze(
             text=i,
             features=Features(entities=EntitiesOptions(sentiment=True, model='644c43e1-f089-414c-bb2c-a1bcc1c130e5')),
-        language='en').get_result()
+            language='en').get_result()
         print(json.dumps(valuable_entities_response['entities'], indent=2))
         # now store the entities from the valuable section into the entities_valuable data structure
         for entry in valuable_entities_response['entities']:
@@ -177,7 +177,7 @@ while input_files:
         needs_improvement_entities_response = NLU.analyze(
             text=i,
             features=Features(entities=EntitiesOptions(sentiment=True, model='644c43e1-f089-414c-bb2c-a1bcc1c130e5')),
-        language='en').get_result()
+            language='en').get_result()
         print(json.dumps(needs_improvement_entities_response['entities'], indent=2))
         # now store the entities from the valuable section into the entities_valuable data structure
         for entry in needs_improvement_entities_response['entities']:
@@ -335,34 +335,71 @@ while input_files:
     # remove the file we finished using from the input_files list
     input_files.pop(0)
 
-#Outputting 
+# Outputting
 for entry in classes_listed:
-    
+    # this will be used to implement the worst case design of the project
+    # create the graph for the valuable keywords and the needs improvement keywords for the classes you are looking at
     plotly_val_keywords = [i for i in entry["valuable_keywords"] if i['sentiment'] > 0]
-    valuable_DataFrame = pd.DataFrame(list(plotly_val_keywords),columns = ['keyword','sentiment','count'])
+    valuable_DataFrame = pd.DataFrame(list(plotly_val_keywords), columns=['keyword', 'sentiment', 'count'])
+    print("Valuable Keywords Data Structure for " + entry["name_of_class"] + " " + entry["class_time"])
     print(valuable_DataFrame)
-    fig1 = px.bar(valuable_DataFrame, x = 'keyword', y = 'sentiment', hover_data=['count'],color = 'count',title = entry["name_of_class"] + " " + entry["class_time"] + " " + "Valuable Keywords")
-    #creating the graphs for plotly_needs_improvement_keywords 
+    fig1 = px.bar(valuable_DataFrame, y='sentiment', hover_data=['keyword', 'sentiment', 'count'], color='count',
+                  title=entry["name_of_class"] + " " + entry["class_time"] + " " + "Valuable Keywords")
+
+    # creating the graphs for plotly_needs_improvement_keywords
     plotly_needs_improvement_keywords = [i for i in entry["needs_improvement_keywords"] if i['sentiment'] < 0]
-    needsImprovement_DataFrame = pd.DataFrame(list(plotly_needs_improvement_keywords),columns = ['keyword','sentiment','count'])
+    needsImprovement_DataFrame = pd.DataFrame(list(plotly_needs_improvement_keywords),
+                                              columns=['keyword', 'sentiment', 'count'])
+    print("Needs Improvement Keywords Data Structure for " + entry["name_of_class"] + " " + entry["class_time"])
     print(needsImprovement_DataFrame)
-    fig2 = px.bar(needsImprovement_DataFrame, x = 'keyword', y = 'sentiment', hover_data=['count'],color = 'count',title = entry["name_of_class"] + " " + entry["class_time"] + " " + "Needs Improvement Keywords")
-    fig = make_subplots(rows=2, cols=1, shared_xaxes=False)
-    fig.add_trace(fig1['data'][0], row=1, col=1)
-    fig.add_trace(fig2['data'][0], row=2, col=1)
-    
+    fig2 = px.bar(needsImprovement_DataFrame, y='sentiment', hover_data=['keyword', 'sentiment', 'count'],
+                  color='count',
+                  title=entry["name_of_class"] + " " + entry["class_time"] + " " + "Needs Improvement Keywords")
+    keywords = make_subplots(rows=2, cols=1, shared_xaxes=False)
+    keywords.add_trace(fig1['data'][0], row=1, col=1)
+    keywords.add_trace(fig2['data'][0], row=2, col=1)
+
     # Update yaxis properties
-    fig.update_yaxes(title_text="Sentiment Score", row=1, col=1)
-    fig.update_yaxes(title_text="Sentiment Score", row=2, col=1)
+    keywords.update_yaxes(title_text="Sentiment Score", row=1, col=1)
+    keywords.update_yaxes(title_text="Sentiment Score", row=2, col=1)
+    keywords.update_xaxes(title_text="Index Value in the Valuable Keywords Data Structure", row=1, col=1)
+    keywords.update_xaxes(title_text="Index Value in the Needs Improvement Keywords Data Structure", row=2, col=1)
 
     # Update title and height
-    fig.update_layout(title_text="Needs Improvement and Valuable Keywords for " + entry["name_of_class"] + " " + entry["class_time"])
-    
-    fig.show()
+    keywords.update_layout(
+        title_text="Needs Improvement and Valuable Keywords for " + entry["name_of_class"] + " " + entry["class_time"])
 
+    keywords.show()
 
-# df = px.data.gapminder().query("country == 'Canada'")
-# fig = px.line(classes_listed, x="year", y="lifeExp", title='Life expectancy in Canada')
-# fig.show()
+# now output the line chart showing the average course sentiment progression
+line_chart_df = pd.DataFrame(list(classes_listed), columns=['class_time', 'average_sentiment_score'])
+line_chart_sentiment = px.line(line_chart_df, x='class_time', y='average_sentiment_score')
+line_chart_sentiment.update_xaxes(title_text="Different Semesters for " + classes_listed[0]["name_of_class"])
+line_chart_sentiment.update_yaxes(title_text="Sentiment Score")
+line_chart_sentiment.update_layout(
+    title_text="Average Sentiment as a function of Time for " + entry["name_of_class"])
+line_chart_sentiment.show()
+
+# now output the line chart showing the course entities progression as a function of time
+updated_classes_listed = []
+for i in classes_listed:
+    for entity_type in i['entities_scores'].keys():
+        for entity_subtype in i['entities_scores'][entity_type].keys():
+            if i['entities_scores'][entity_type][entity_subtype][1] != 0:
+                updated_classes_listed.append({'class_time': i['class_time'],
+                                               'type': entity_type,
+                                               'subtype': entity_subtype,
+                                               'count': i['entities_scores'][entity_type][entity_subtype][1],
+                                               'sentiment': (i['entities_scores'][entity_type][entity_subtype][0])/
+                                                            (i['entities_scores'][entity_type][entity_subtype][1])})
+            # updated_classes_listed =[i for i in classes_listed if i['entities_scores'][][][1] != 0]
+line_chart_entities_df = pd.DataFrame(list(updated_classes_listed),
+                                      columns=['class_time', 'entities_scores', 'type', 'subtype', 'sentiment'])
+line_chart_entities = px.line(line_chart_entities_df, x='class_time', y='sentiment', color='type', line_group='subtype')
+line_chart_entities.update_xaxes(title_text="Different Semesters for " + classes_listed[0]["name_of_class"])
+line_chart_entities.update_yaxes(title_text="Sentiment Score")
+line_chart_entities.update_layout(
+    title_text="Average Sentiment as a function of Time for different Entities in " + entry["name_of_class"])
+line_chart_entities.show()
 print("YOU HAVE REACHED THE END OF THE SIMULATION\n ")
 print("THE END")
