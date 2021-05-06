@@ -120,7 +120,7 @@ while input_files:
             text=i,
             features=Features(sentiment=SentimentOptions()),
             language="en").get_result()
-        #print(json.dumps(sentiment_valuable_response['sentiment']['document']["score"], indent=1))
+        # print(json.dumps(sentiment_valuable_response['sentiment']['document']["score"], indent=1))
         # use Ervin's part for the averaging to get an average sentiment score for the valuables of the course
         add.append(sentiment_valuable_response['sentiment']['document']["score"])
         # now get all of the keywords in the valuables section of the input
@@ -128,26 +128,26 @@ while input_files:
             text=i,
             features=Features(keywords=KeywordsOptions(limit=20, sentiment=True)),
             language='en').get_result()
-        #print(json.dumps(valuable_keywords_response['keywords'], indent=2))
+        # print(json.dumps(valuable_keywords_response['keywords'], indent=2))
         # store these keywords in for later use
         for entry in valuable_keywords_response['keywords']:
             valuable_keywords.append({'keyword': entry['text'],
-                                    'sentiment': entry['sentiment']['score'],
-                                    'count': entry['count']})
+                                      'sentiment': entry['sentiment']['score'],
+                                      'count': entry['count']})
         print("\n")
         # look for the entities in the valuable section of the input
         valuable_entities_response = NLU.analyze(
             text=i,
             features=Features(entities=EntitiesOptions(sentiment=True, model='644c43e1-f089-414c-bb2c-a1bcc1c130e5')),
             language='en').get_result()
-        #print(json.dumps(valuable_entities_response['entities'], indent=2))
+        # print(json.dumps(valuable_entities_response['entities'], indent=2))
         # now store the entities from the valuable section into the entities_valuable data structure
         for entry in valuable_entities_response['entities']:
             entities_valuables.append({'name': entry['text'],
-                                    'type': entry['type'],
-                                    'subtype': entry['disambiguation']['subtype'][0],
-                                    'count': entry['count'],
-                                    'sentiment': entry['sentiment']['score']})
+                                       'type': entry['type'],
+                                       'subtype': entry['disambiguation']['subtype'][0],
+                                       'count': entry['count'],
+                                       'sentiment': entry['sentiment']['score']})
     print("\n")
 
     # looking through all of the keywords in the needs improvement section of the course
@@ -161,31 +161,31 @@ while input_files:
             text=i,
             features=Features(sentiment=SentimentOptions()),
             language="en").get_result()
-        #print(json.dumps(sentiment_needs_improvement_response['sentiment']['document']["score"], indent=1))
+        # print(json.dumps(sentiment_needs_improvement_response['sentiment']['document']["score"], indent=1))
         # using Ervin's part to calculate a score for the needs improvement section of the course
         add.append(sentiment_needs_improvement_response['sentiment']['document']["score"])
         needs_improvement_keywords_response = NLU.analyze(
             text=i,
             features=Features(keywords=KeywordsOptions(limit=20, sentiment=True)),
             language='en').get_result()
-        #print(json.dumps(needs_improvement_keywords_response['keywords'], indent=2))
+        # print(json.dumps(needs_improvement_keywords_response['keywords'], indent=2))
         for entry in needs_improvement_keywords_response['keywords']:
             needs_improvement_keywords.append({'keyword': entry['text'],
-                                            'sentiment': entry['sentiment']['score'],
-                                            'count': entry['count']})
+                                               'sentiment': entry['sentiment']['score'],
+                                               'count': entry['count']})
         # look for the entities in the needs improvement section of the input
         needs_improvement_entities_response = NLU.analyze(
             text=i,
             features=Features(entities=EntitiesOptions(sentiment=True, model='644c43e1-f089-414c-bb2c-a1bcc1c130e5')),
             language='en').get_result()
-        #print(json.dumps(needs_improvement_entities_response['entities'], indent=2))
+        # print(json.dumps(needs_improvement_entities_response['entities'], indent=2))
         # now store the entities from the valuable section into the entities_valuable data structure
         for entry in needs_improvement_entities_response['entities']:
             entities_needs_improvement.append({'name': entry['text'],
-                                            'type': entry['type'],
-                                            'subtype': entry['disambiguation']['subtype'][0],
-                                            'count': entry['count'],
-                                            'sentiment': entry['sentiment']['score']})
+                                               'type': entry['type'],
+                                               'subtype': entry['disambiguation']['subtype'][0],
+                                               'count': entry['count'],
+                                               'sentiment': entry['sentiment']['score']})
         print("\n")
 
     for element in add:
@@ -206,15 +206,15 @@ while input_files:
         if key_num_list.count(entry['keyword']) > 1:
             # initialize an entry to have this template
             i = {'keyword': entry['keyword'],
-                'sentiment': 0,
-                'count': 0}
+                 'sentiment': 0,
+                 'count': 0}
             # loop through valuable_keywords to find the multiple occurrences
             for entry2 in valuable_keywords:
                 # if you find the occurrence, update it
                 if entry2['keyword'] == entry['keyword']:
                     i = {'keyword': entry2['keyword'],
-                        'sentiment': i['sentiment'] + entry2['count'] * entry2['sentiment'],
-                        'count': i['count'] + entry2['count']}
+                         'sentiment': i['sentiment'] + entry2['count'] * entry2['sentiment'],
+                         'count': i['count'] + entry2['count']}
                 else:
                     # move on, since you couldn't find the keyword yet
                     continue
@@ -224,14 +224,14 @@ while input_files:
         else:
             # if you only have one occurrence, just put it into the list
             temp.append({'keyword': entry['keyword'],
-                        'sentiment': entry['sentiment'],
-                        'count': entry['count']})
+                         'sentiment': entry['sentiment'],
+                         'count': entry['count']})
     # normalize the sentiment values now
     valuable_keywords.clear()
     for entry in temp:
         entry = {'keyword': entry['keyword'],
-                'sentiment': entry['sentiment'] / (entry['count']),
-                'count': entry['count']}
+                 'sentiment': entry['sentiment'] / (entry['count']),
+                 'count': entry['count']}
         valuable_keywords.append(entry)
     # this will allow us to sort the frequency based on the count and sentiment
     # First order based on sentiment. Since it would order based on sentiment,
@@ -241,7 +241,7 @@ while input_files:
     # order by count now
     valuable_keywords.sort(key=sorting_on_count, reverse=True)
     print("\n\n\n\n")
-    #print(json.dumps(valuable_keywords, indent=2))
+    # print(json.dumps(valuable_keywords, indent=2))
     print("\n")
     # this is the valuable_keywords is the list that we will be using to output to the graphs
 
@@ -256,15 +256,15 @@ while input_files:
         if key_num_list.count(entry['keyword']) > 1:
             # initialize an entry to have this template
             i = {'keyword': entry['keyword'],
-                'sentiment': 0,
-                'count': 0}
+                 'sentiment': 0,
+                 'count': 0}
             # loop through needs_improvement_keywords to find the multiple occurrences
             for entry2 in needs_improvement_keywords:
                 # if you find the occurrence, update it
                 if entry2['keyword'] == entry['keyword']:
                     i = {'keyword': entry2['keyword'],
-                        'sentiment': i['sentiment'] + entry2['count'] * entry2['sentiment'],
-                        'count': i['count'] + entry2['count']}
+                         'sentiment': i['sentiment'] + entry2['count'] * entry2['sentiment'],
+                         'count': i['count'] + entry2['count']}
                 else:
                     # move on, since you couldn't find the keyword yet
                     continue
@@ -274,8 +274,8 @@ while input_files:
         else:
             # if you only have one occurrence, just put it into the list
             temp.append({'keyword': entry['keyword'],
-                        'sentiment': entry['sentiment'],
-                        'count': entry['count']})
+                         'sentiment': entry['sentiment'],
+                         'count': entry['count']})
     # normalize the sentiment values now
     needs_improvement_keywords.clear()
     for entry in temp:
@@ -291,7 +291,7 @@ while input_files:
     # order by count now
     needs_improvement_keywords.sort(key=sorting_on_count, reverse=True)
     print("\n\n\n\n")
-    #print(json.dumps(needs_improvement_keywords, indent=2))
+    # print(json.dumps(needs_improvement_keywords, indent=2))
     print("\n")
     # needs_improvement_keywords is final list
 
@@ -378,6 +378,7 @@ line_chart_sentiment.update_xaxes(title_text="Different Semesters for " + classe
 line_chart_sentiment.update_yaxes(title_text="Sentiment Score")
 line_chart_sentiment.update_layout(
     title_text="Average Sentiment as a function of Time for " + entry["name_of_class"])
+line_chart_sentiment.update_traces(mode='markers+lines')
 line_chart_sentiment.show()
 
 # now output the line chart showing the course entities progression as a function of time
@@ -390,136 +391,295 @@ for i in classes_listed:
                                                'type': entity_type,
                                                'subtype': entity_subtype,
                                                'count': i['entities_scores'][entity_type][entity_subtype][1],
-                                               'sentiment': (i['entities_scores'][entity_type][entity_subtype][0])/
+                                               'sentiment': (i['entities_scores'][entity_type][entity_subtype][0]) /
                                                             (i['entities_scores'][entity_type][entity_subtype][1])})
-            # updated_classes_listed =[i for i in classes_listed if i['entities_scores'][][][1] != 0]
-# line_chart_entities_df = pd.DataFrame(list(updated_classes_listed),
-#                                       columns=['class_time', 'entities_scores', 'type', 'subtype', 'sentiment'])
-# line_chart_entities = px.line(line_chart_entities_df, x='class_time', y='sentiment', color='type', line_group='subtype')
-# line_chart_entities.update_xaxes(title_text="Different Semesters for " + classes_listed[0]["name_of_class"])
-# line_chart_entities.update_yaxes(title_text="Sentiment Score")
-# line_chart_entities.update_layout(
-#     title_text="Average Sentiment as a function of Time for different Entities in " + entry["name_of_class"])
 
+entity_type_graphs = make_subplots(rows=3, cols=3, shared_xaxes=False, subplot_titles=("Course", "Lecture", "Recitation"
+                                                                                       , "Exams", "Labs", "Projects",
+                                                                                       "Homework", "Contact", "Person"))
+
+# outputting the course Data
 course_DataFrame = pd.DataFrame(list(updated_classes_listed),
-                                            columns=['class_time','type', 'subtype','count','sentiment'])
+                                columns=['class_time', 'type', 'subtype', 'count', 'sentiment'])
 course_DataFrame = course_DataFrame.query("type == 'Course'")
-course = px.line(course_DataFrame, x='class_time',y='sentiment',color='subtype')  
-course.update_xaxes(title_text="Different Semesters for " + classes_listed[0]["name_of_class"])
-course.update_yaxes(title_text="Sentiment Score")
-course.update_layout(
-    title_text="Average Sentiment as a function of Time for course Type in " + entry["name_of_class"])
 print(course_DataFrame)
+if course_DataFrame.empty:
+    course_DataFrame = pd.DataFrame({"class_time": [0, 1, 2], "sentiment": [0, 0, 0], "count": [0, 0, 0]})
+    course = px.line(course_DataFrame, x='class_time', y='sentiment', hover_data=['class_time', 'sentiment', 'count'])
+    course.update_layout(xaxis={"visible": False},
+                         yaxis={"visible": False},
+                         annotations=[
+                             {
+                                 "text": "Please select v and m",
+                                 "xref": "paper",
+                                 "yref": "paper",
+                                 "showarrow": False,
+                                 "font": {
+                                     "size": 28
+                                 }
+                             }
+                         ])
+else:
+    course = px.line(course_DataFrame, x='class_time', y='sentiment', color='subtype',
+                     hover_data=['class_time', 'sentiment', 'count'])
+    course.update_xaxes(title_text="Different Semesters for " + classes_listed[0]["name_of_class"])
+    course.update_yaxes(title_text="Sentiment Score")
+    course.update_layout(
+        title_text="Average Sentiment as a function of Time for course Type in " + entry["name_of_class"])
 
+# outputting the lecture Data
 lectures_DataFrame = pd.DataFrame(list(updated_classes_listed),
-                                            columns=['class_time','type', 'subtype','count','sentiment'])
+                                  columns=['class_time', 'type', 'subtype', 'count', 'sentiment'])
 lectures_DataFrame = lectures_DataFrame.query("type == 'Lecture'")
-lectures = px.line(lectures_DataFrame, x='class_time',y='sentiment',color='subtype')
-lectures.update_xaxes(title_text="Different Semesters for " + classes_listed[0]["name_of_class"])
-lectures.update_yaxes(title_text="Sentiment Score")
-lectures.update_layout(
-    title_text="Average Sentiment as a function of Time for lecture Type in " + entry["name_of_class"])
+print(lectures_DataFrame)
+if lectures_DataFrame.empty:
+    lectures_DataFrame_DataFrame = pd.DataFrame({"class_time": [0, 1, 2], "sentiment": [0, 0, 0], "count": [0, 0, 0]})
+    lectures = px.line(lectures_DataFrame, x='class_time', y='sentiment',hover_data=['class_time', 'sentiment', 'count'])
+    lectures.update_layout(xaxis={"visible": False},
+                           yaxis={"visible": False},
+                           annotations=[
+                               {
+                                   "text": "N/A",
+                                   "xref": "paper",
+                                   "yref": "paper",
+                                   "showarrow": False,
+                                   "font": {
+                                       "size": 28
+                                   }
+                               }
+                           ])
+else:
+    lectures = px.line(lectures_DataFrame, x='class_time', y='sentiment', color='subtype',
+                       hover_data=['class_time', 'sentiment', 'count'])
+    lectures.update_xaxes(title_text="Different Semesters for " + classes_listed[0]["name_of_class"])
+    lectures.update_yaxes(title_text="Sentiment Score")
+    lectures.update_layout(
+        title_text="Average Sentiment as a function of Time for lecture Type in " + entry["name_of_class"])
 
+# outputting the recitation Data
 recitations_DataFrame = pd.DataFrame(list(updated_classes_listed),
-                                            columns=['class_time','type', 'subtype','count','sentiment'])
+                                     columns=['class_time', 'type', 'subtype', 'count', 'sentiment'])
 recitations_DataFrame = recitations_DataFrame.query("type == 'Recitation'")
 print(recitations_DataFrame)
-if (recitations_DataFrame.empty):
-    recitations = px.line(x='class_time',y='sentiment',color='subtype')
+if recitations_DataFrame.empty:
+    recitations_DataFrame = pd.DataFrame({"class_time": [0, 1, 2], "sentiment": [0, 0, 0], "count": [0, 0, 0]})
+    recitations = px.line(recitations_DataFrame, x='class_time', y='sentiment', hover_data=['class_time', 'sentiment', 'count'])
+    recitations.update_layout(xaxis={"visible": False},
+                              yaxis={"visible": False},
+                              annotations=[
+                                  {
+                                      "text": "N/A",
+                                      "xref": "paper",
+                                      "yref": "paper",
+                                      "showarrow": False,
+                                      "font": {
+                                          "size": 28
+                                      }
+                                  }
+                              ])
 else:
-    recitations = px.line(recitations_DataFrame, x='class_time',y='sentiment',color='subtype')
+    recitations = px.line(recitations_DataFrame, x='class_time', y='sentiment', color='subtype',
+                          hover_data=['class_time', 'sentiment', 'count'])
     recitations.update_xaxes(title_text="Different Semesters for " + classes_listed[0]["name_of_class"])
     recitations.update_yaxes(title_text="Sentiment Score")
     recitations.update_layout(
         title_text="Average Sentiment as a function of Time for lecture Type in " + entry["name_of_class"])
 
+# outputting the exams Data
 exams_DataFrame = pd.DataFrame(list(updated_classes_listed),
-                                            columns=['class_time','type', 'subtype','count','sentiment'])
+                               columns=['class_time', 'type', 'subtype', 'count', 'sentiment'])
 exams_DataFrame = exams_DataFrame.query("type == 'Exams'")
-exams = px.line(exams_DataFrame, x='class_time',y='sentiment',color='subtype')
-exams.update_xaxes(title_text="Different Semesters for " + classes_listed[0]["name_of_class"])
-exams.update_yaxes(title_text="Sentiment Score")
-exams.update_layout(
-    title_text="Average Sentiment as a function of Time for Exams Type in " + entry["name_of_class"])
-entity_type_graphs = make_subplots(rows=3, cols=3, shared_xaxes=False,subplot_titles=("Course","Lab","Lecture"))
+print(exams_DataFrame)
+if exams_DataFrame.empty:
+    exams_DataFrame = pd.DataFrame({"class_time": [0, 1, 2], "sentiment": [0, 0, 0], "count": [0, 0, 0]})
+    exams = px.line(exams_DataFrame, x='class_time', y='sentiment', hover_data=['class_time', 'sentiment', 'count'])
+    exams.update_layout(xaxis={"visible": False},
+                        yaxis={"visible": False},
+                        annotations=[
+                            {
+                                "text": "N/A",
+                                "xref": "paper",
+                                "yref": "paper",
+                                "showarrow": False,
+                                "font": {
+                                    "size": 28
+                                }
+                            }
+                        ])
+else:
+    exams = px.line(exams_DataFrame, x='class_time', y='sentiment', color='subtype',
+                    hover_data=['class_time', 'sentiment', 'count'])
+    exams.update_xaxes(title_text="Different Semesters for " + classes_listed[0]["name_of_class"])
+    exams.update_yaxes(title_text="Sentiment Score")
+    exams.update_layout(
+        title_text="Average Sentiment as a function of Time for Exams Type in " + entry["name_of_class"])
 
+# outputting the labs Data
 labs_DataFrame = pd.DataFrame(list(updated_classes_listed),
-                                            columns=['class_time','type', 'subtype','count','sentiment'])
+                              columns=['class_time', 'type', 'subtype', 'count', 'sentiment'])
 labs_DataFrame = labs_DataFrame.query("type == 'Lab'")
-labs = px.line(labs_DataFrame, x='class_time',y='sentiment',color='subtype') 
-labs.update_xaxes(title_text="Different Semesters for " + classes_listed[0]["name_of_class"])
-labs.update_yaxes(title_text="Sentiment Score")
-labs.update_layout(
-    title_text="Average Sentiment as a function of Time for Lab Type in " + entry["name_of_class"])
+print(labs_DataFrame)
+if labs_DataFrame.empty:
+    labs_DataFrame = pd.DataFrame({"class_time": [0, 1, 2], "sentiment": [0, 0, 0], "count": [0, 0, 0]})
+    labs = px.line(labs_DataFrame, x='class_time', y='sentiment', hover_data=['class_time', 'sentiment', 'count'])
+    labs.update_layout(xaxis={"visible": False},
+                       yaxis={"visible": False},
+                       annotations=[
+                           {
+                               "text": "N/A",
+                               "xref": "paper",
+                               "yref": "paper",
+                               "showarrow": False,
+                               "font": {
+                                   "size": 28
+                               }
+                           }
+                       ])
+else:
+    labs = px.line(labs_DataFrame, x='class_time', y='sentiment', color='subtype',
+                   hover_data=['class_time', 'sentiment', 'count'])
+    labs.update_xaxes(title_text="Different Semesters for " + classes_listed[0]["name_of_class"])
+    labs.update_yaxes(title_text="Sentiment Score")
+    labs.update_layout(
+        title_text="Average Sentiment as a function of Time for Lab Type in " + entry["name_of_class"])
 
+# outputting the projects Data
 projects_DataFrame = pd.DataFrame(list(updated_classes_listed),
-                                            columns=['class_time','type', 'subtype','count','sentiment'])
+                                  columns=['class_time', 'type', 'subtype', 'count', 'sentiment'])
 projects_DataFrame = projects_DataFrame.query("type == 'Projects'")
-projects = px.line(projects_DataFrame, x='class_time',y='sentiment',color='subtype') 
-projects.update_xaxes(title_text="Different Semesters for " + classes_listed[0]["name_of_class"])
-projects.update_yaxes(title_text="Sentiment Score")
-projects.update_layout(
-    title_text="Average Sentiment as a function of Time for Projects Type in " + entry["name_of_class"])
+print(projects_DataFrame)
+if projects_DataFrame.empty:
+    projects_DataFrame = pd.DataFrame({"class_time": [0, 1, 2], "sentiment": [0, 0, 0], "count": [0, 0, 0]})
+    projects = px.line(projects_DataFrame, x='class_time', y='sentiment', hover_data=['class_time', 'sentiment', 'count'])
+    projects.update_layout(xaxis={"visible": False},
+                           yaxis={"visible": False},
+                           annotations=[
+                               {
+                                   "text": "N/A",
+                                   "xref": "paper",
+                                   "yref": "paper",
+                                   "showarrow": False,
+                                   "font": {
+                                       "size": 28
+                                   }
+                               }
+                           ])
+else:
+    projects = px.line(projects_DataFrame, x='class_time', y='sentiment', color='subtype',
+                       hover_data=['class_time', 'sentiment', 'count'])
+    projects.update_xaxes(title_text="Different Semesters for " + classes_listed[0]["name_of_class"])
+    projects.update_yaxes(title_text="Sentiment Score")
+    projects.update_layout(
+        title_text="Average Sentiment as a function of Time for Projects Type in " + entry["name_of_class"])
 
+# outputting the homeworks Data
 homeworks_DataFrame = pd.DataFrame(list(updated_classes_listed),
-                                            columns=['class_time','type', 'subtype','count','sentiment'])
+                                   columns=['class_time', 'type', 'subtype', 'count', 'sentiment'])
 homeworks_DataFrame = homeworks_DataFrame.query("type == 'Homework'")
-homeworks = px.line(homeworks_DataFrame, x='class_time',y='sentiment',color='subtype') 
-homeworks.update_xaxes(title_text="Different Semesters for " + classes_listed[0]["name_of_class"])
-homeworks.update_yaxes(title_text="Sentiment Score")
-homeworks.update_layout(
-    title_text="Average Sentiment as a function of Time for Homework Type in " + entry["name_of_class"])
+print(homeworks_DataFrame)
+if homeworks_DataFrame.empty:
+    homeworks_DataFrame = pd.DataFrame({"class_time": [0, 1, 2], "sentiment": [0, 0, 0], "count": [0, 0, 0]})
+    homeworks = px.line(homeworks_DataFrame, x='class_time', y='sentiment', hover_data=['class_time', 'sentiment', 'count'])
+    homeworks.update_layout(xaxis={"visible": False},
+                            yaxis={"visible": False},
+                            annotations=[
+                                {
+                                    "text": "N/A",
+                                    "xref": "paper",
+                                    "yref": "paper",
+                                    "showarrow": False,
+                                    "font": {
+                                        "size": 28
+                                    }
+                                }
+                            ])
+else:
+    homeworks = px.line(homeworks_DataFrame, x='class_time', y='sentiment', color='subtype',
+                        hover_data=['class_time', 'sentiment', 'count'])
+    homeworks.update_xaxes(title_text="Different Semesters for " + classes_listed[0]["name_of_class"])
+    homeworks.update_yaxes(title_text="Sentiment Score")
+    homeworks.update_layout(
+        title_text="Average Sentiment as a function of Time for Homework Type in " + entry["name_of_class"])
 
-
+# outputting the contacts Data
 contact_DataFrame = pd.DataFrame(list(updated_classes_listed),
-                                            columns=['class_time','type', 'subtype','count','sentiment'])
+                                 columns=['class_time', 'type', 'subtype', 'count', 'sentiment'])
 contact_DataFrame = contact_DataFrame.query("type == 'Contact'")
-contact = px.line(contact_DataFrame, x='class_time',y='sentiment',color='subtype') 
-contact.update_xaxes(title_text="Different Semesters for " + classes_listed[0]["name_of_class"])
-contact.update_yaxes(title_text="Sentiment Score")
-contact.update_layout(
-    title_text="Average Sentiment as a function of Time for Contact Type in " + entry["name_of_class"])
+print(contact_DataFrame)
+if contact_DataFrame.empty:
+    contact_DataFrame = pd.DataFrame({"class_time": [0, 1, 2], "sentiment": [0, 0, 0], "count": [0, 0, 0]})
+    contact = px.line(contact_DataFrame, x='class_time', y='sentiment', hover_data=['class_time', 'sentiment', 'count'])
+    contact.update_layout(xaxis={"visible": False},
+                          yaxis={"visible": False},
+                          annotations=[
+                              {
+                                  "text": "N/A",
+                                  "xref": "paper",
+                                  "yref": "paper",
+                                  "showarrow": False,
+                                  "font": {
+                                      "size": 28
+                                  }
+                              }
+                          ])
+    contact.update_layout()
+else:
+    contact = px.line(contact_DataFrame, x='class_time', y='sentiment', color='subtype',
+                      hover_data=['class_time', 'sentiment', 'count'])
+    contact.update_xaxes(title_text="Different Semesters for " + classes_listed[0]["name_of_class"])
+    contact.update_yaxes(title_text="Sentiment Score")
+    contact.update_layout(
+        title_text="Average Sentiment as a function of Time for Contact Type in " + entry["name_of_class"])
 
+# outputting the person Data
 person_DataFrame = pd.DataFrame(list(updated_classes_listed),
-                                            columns=['class_time','type', 'subtype','count','sentiment'])
+                                columns=['class_time', 'type', 'subtype', 'count', 'sentiment'])
 person_DataFrame = person_DataFrame.query("type == 'Person'")
-person = px.line(person_DataFrame, x='class_time',y='sentiment',color='subtype') 
-person.update_xaxes(title_text="Different Semesters for " + classes_listed[0]["name_of_class"])
-person.update_yaxes(title_text="Sentiment Score")
-person.update_layout(
-    title_text="Average Sentiment as a function of Time for Person Type in " + entry["name_of_class"])
-
+print(person_DataFrame)
+if person_DataFrame.empty:
+    person_DataFrame = pd.DataFrame({"class_time": [0, 1, 2], "sentiment": [0, 0, 0], "count": [0, 0, 0]})
+    person = px.line(person_DataFrame, x='class_time', y='sentiment', hover_data=['class_time', 'sentiment', 'count'])
+    person.update_layout(xaxis={"visible": False},
+                         yaxis={"visible": False},
+                         annotations=[
+                             {
+                                 "text": "N/A",
+                                 "xref": "paper",
+                                 "yref": "paper",
+                                 "showarrow": False,
+                                 "font": {
+                                     "size": 28
+                                 }
+                             }
+                         ])
+else:
+    person = px.line(person_DataFrame, x='class_time', y='sentiment', color='subtype',
+                     hover_data=['class_time', 'sentiment', 'count'])
+    person.update_xaxes(title_text="Different Semesters for " + classes_listed[0]["name_of_class"])
+    person.update_yaxes(title_text="Sentiment Score")
+    person.update_layout(
+        title_text="Average Sentiment as a function of Time for Person Type in " + entry["name_of_class"])
 
 for x in course['data']:
     entity_type_graphs.add_trace(x, row=1, col=1)
 for x in lectures['data']:
-    entity_type_graphs.add_trace(x, row=1, col=3)
+    entity_type_graphs.add_trace(x, row=1, col=2)
 for x in recitations['data']:
     entity_type_graphs.add_trace(x, row=1, col=3)
 for x in exams['data']:
-    entity_type_graphs.add_trace(x, row=1, col=2)
+    entity_type_graphs.add_trace(x, row=2, col=1)
 for x in labs['data']:
-    entity_type_graphs.add_trace(x, row=1, col=3)
+    entity_type_graphs.add_trace(x, row=2, col=2)
 for x in projects['data']:
-    entity_type_graphs.add_trace(x, row=1, col=3)
+    entity_type_graphs.add_trace(x, row=2, col=3)
 for x in homeworks['data']:
-    entity_type_graphs.add_trace(x, row=1, col=3)
+    entity_type_graphs.add_trace(x, row=3, col=1)
 for x in contact['data']:
-    entity_type_graphs.add_trace(x, row=1, col=3)
+    entity_type_graphs.add_trace(x, row=3, col=2)
 for x in person['data']:
-    entity_type_graphs.add_trace(x, row=1, col=3)    
-# entity_type_graphs.add_trace(course['data'][1], row=1, col=1)
-# entity_type_graphs.add_trace(course['data'][2], row=1, col=1)
-# entity_type_graphs.add_trace(course['data'][3], row=1, col=1)
-# entity_type_graphs.add_trace(course['data'][4], row=1, col=1)
-# entity_type_graphs.add_trace(course['data'][5], row=1, col=1)
-# entity_type_graphs.add_trace(course['data'][6], row=1, col=1)
-print(course)
-# entity_type_graphs.add_trace(course['data'][7], row=1, col=1)
-# entity_type_graphs.add_trace(course['data'][8], row=1, col=1)
+    entity_type_graphs.add_trace(x, row=3, col=3)
 
-# entity_type_graphs.add_trace(lab['data'][0], row=1, col=2)
-# entity_type_graphs.add_trace(lecture['data'][0], row=1, col=3)
+entity_type_graphs.update_traces(mode='markers+lines')
+
 entity_type_graphs.show()
 print("YOU HAVE REACHED THE END OF THE SIMULATION\n ")
-print("THE END")
